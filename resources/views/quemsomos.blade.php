@@ -9,6 +9,7 @@
         <meta charset="utf-8">
         <link rel="icon" href="images/favicon.png" type="image/x-icon">
         <!-- Stylesheets-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Kanit:300,400,500,500i,600,900%7CRoboto:400,900">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/fonts.css">
@@ -80,6 +81,132 @@
                 </div>
             </div>
         </section>
+        <section class="section section-md bg-gray-100">
+          <div class="container">
+            <!-- Heading Component-->
+            <article class="heading-component">
+                <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Últimos Jogos</h5>
+                </div>
+            </article>
+            <div>
+              <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </section>
         <footer class="section footer-classic footer-classic-dark context-dark">
             <div class="footer-classic-aside footer-classic-darken">
                 <div class="container">
@@ -107,5 +234,6 @@
         <!-- Javascript-->
         <script src="js/core.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
