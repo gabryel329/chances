@@ -11,30 +11,42 @@ class ChancesController extends Controller
 {
 
     public function showTable()
-    {
-        $client = new Client();
-        $response = $client->get('https://www.google.com/search?q=tabela+brasileirao');
-        $html = (string) $response->getBody();
+{
+    // Configurando o cliente cURL com verificação de certificado desativada temporariamente
+    $client = new Client([
+        'verify' => false,
+    ]);
 
-        $crawler = new Crawler($html);
+    // Realizando a solicitação HTTP usando cURL
+    $response = $client->get('https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/');
 
-        $rows = [];
-        $crawler->filter('table tr')->each(function ($row) use (&$rows) {
-            $rowData = [];
-            $row->filter('td')->each(function ($cell) use (&$rowData) {
-                $rowData[] = $cell->text();
-            });
-            $rows[] = $rowData;
+    // Obtendo o corpo da resposta HTTP
+    $html = (string) $response->getBody();
+
+    // Criando uma instância do Crawler para analisar o HTML
+    $crawler = new Crawler($html);
+
+    // Inicializando um array para armazenar os dados da tabela
+    $rows = [];
+
+    // Iterando sobre as linhas da tabela e extraindo os dados das células
+    $crawler->filter('table tr')->each(function ($row) use (&$rows) {
+        $rowData = [];
+        $row->filter('td')->each(function ($cell) use (&$rowData) {
+            $rowData[] = $cell->text();
         });
+        $rows[] = $rowData;
+    });
 
-        return view('chances', compact('rows'));
-    }
+    // Retornando a view 'chances' com os dados da tabela compactados
+    return view('chances', compact('rows'));
+}
+
 
     public function readExcel()
     {
         // Caminho para o arquivo Excel
-        $filePath = public_path('C:\Users\Design Rafaela\Desktop\chancesvitoria.xlsx');
-        $dd('$filePath');
+        $filePath = public_path('/chancesvitoria.xlsx');
         // Carrega o arquivo Excel
         $spreadsheet = IOFactory::load($filePath);
 

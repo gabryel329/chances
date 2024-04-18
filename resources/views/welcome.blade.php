@@ -108,43 +108,43 @@
                               <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
                               <h6 style="text-align: center">
                                 <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
                                 {{ $cellA3 }} x {{ $cellB3 }} 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
+                                <img src="images/bahia.png" alt="Bahia">
+                              </h6>
+                            </div>
+                            <div class="card-footer">
+                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card text-center">
+                            <div class="card-header" style="text-align: center">
+                              <h5>Campeonato Brasileiro</h5>
+                            </div>
+                            <div class="card-body" style="background-color: #c9c9c9">
+                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
+                              <h6 style="text-align: center">
+                                <img src="images/vitoria.png" alt="Vitoria"> 
+                                Vitória x Bahia 
                                 <img src="images/bahia.png" alt="Bahia">
                               </h6>
                             </div>
