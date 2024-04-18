@@ -51,13 +51,11 @@
                       </div>
                       <div class="col-6 col-sm-6">
                         <ul class="rd-navbar-nav" style="margin-top: 20px;">
-                          <li class="rd-nav-item"><a class="heading-component-title" href="./">Home</a>
+                          <li class="rd-nav-item"><a class="heading-component-title" href="/QuemSomos">Quem Somos</a>
                           </li>
-                          <li class="rd-nav-item"><a class="heading-component-title" href="./">Quem Somos</a>
+                          <li class="rd-nav-item"><a class="heading-component-title" href="/Chances">Chances</a>
                           </li>
-                          <li class="rd-nav-item"><a class="heading-component-title" href="./">Chances</a>
-                          </li>
-                          <li class="rd-nav-item"><a class="heading-component-title" href="./">Elenco</a>
+                          <li class="rd-nav-item"><a class="heading-component-title" href="/Elenco">Elenco</a>
                           </li>
                         </ul>
                       </div>
@@ -77,8 +75,8 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-6">
                                 <div class="swiper-slide-caption">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">We play Soccer</h1>
-                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200">like no one else in the united states</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="about-us.html">Read More</a>
+                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #212121">O maior site de probabilidade esportiva com IA do Brasil,</h1>
+                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #212121">alcançando mais de 90% de assertividade.</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="/QuemSomos">Confira</a>
                                 </div>
                             </div>
                         </div>
@@ -89,8 +87,8 @@
                         <div class="row justify-content-end">
                             <div class="col-xl-5">
                                 <div class="swiper-slide-caption">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">We Are Pros</h1>
-                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200">in Everything Concerning Soccer</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="about-us.html">Read More</a>
+                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #212121">Amamos futebol</h1>
+                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #212121">confira o atual elenco do seu time.</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="/Elenco">Confira</a>
                                 </div>
                             </div>
                         </div>
@@ -101,8 +99,8 @@
                         <div class="row">
                             <div class="col-xl-5">
                                 <div class="swiper-slide-caption">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100">Best Website</h1>
-                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200">for soccer news, updates, <br class="d-none d-xl-block"> and game results</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="about-us.html">Read More</a>
+                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #212121">Melhor Site</h1>
+                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #212121">para noticias de futebol, atualizações <br class="d-none d-xl-block"> e reultados de jogos.</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="/Chances">Confira</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +125,7 @@
                   <!-- Game Result Bug-->
                   <article class="game-result">
                     <div class="game-info game-info-creative">
-                      <p class="game-info-subtitle">Real Stadium - 
+                      <p class="game-info-subtitle">Real Stadium -
                           <time datetime="08:30"> 08:30 PM</time>
                       </p>
                       <h6 class="game-info-title">Champions league semi-final 2020</h6>
@@ -160,7 +158,7 @@
                   <!-- Game Result Bug-->
                   <article class="game-result">
                     <div class="game-info game-info-creative">
-                      <p class="game-info-subtitle">Real Stadium - 
+                      <p class="game-info-subtitle">Real Stadium -
                           <time datetime="08:30"> 08:30 PM</time>
                       </p>
                       <h6 class="game-info-title">Champions league semi-final 2020</h6>
@@ -193,7 +191,7 @@
                   <!-- Game Result Bug-->
                   <article class="game-result">
                     <div class="game-info game-info-creative">
-                      <p class="game-info-subtitle">Real Stadium - 
+                      <p class="game-info-subtitle">Real Stadium -
                           <time datetime="08:30"> 08:30 PM</time>
                       </p>
                       <h6 class="game-info-title">Champions league semi-final 2020</h6>
@@ -229,15 +227,19 @@
                 <div class="container">
                     <div class="layout-justify">
                     <!-- Rights-->
-                    <p class="rights"><span>Sportland</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span><span>.&nbsp;</span><span>Designed by <a href="https://www.templatemonster.com/products/author/zemez/">Zemez.</a></span></p>
+                    <p class="rights"><span>A&B Entertainment and Business</span><span>&nbsp;&copy;&nbsp;</span><span class="copyright-year"></span><span>.&nbsp;</span>
+                        {{-- <span>
+                            Designed by <a href="https://www.templatemonster.com/products/author/zemez/">Zemez.</a>
+                        </span> --}}
+                    </p>
                     <nav class="nav-minimal">
                         <ul class="nav-minimal-list">
-                        <li class="active"><a href="index.html">Home</a></li>
+                        {{-- <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">Statistics</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">News</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Shop</a></li> --}}
                         </ul>
                     </nav>
                     </div>
