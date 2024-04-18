@@ -63,4 +63,38 @@ class ChancesController extends Controller
             'cellB3' => $cellB3,
         ]);
     }
+    public function showTable2()
+    {
+        // Configurando o cliente cURL com verificação de certificado desativada temporariamente
+        $client = new Client([
+            'verify' => false,
+        ]);
+    
+        // Realizando a solicitação HTTP usando cURL
+        $response = $client->get('https://www.espn.com.br/futebol/time/elenco/_/id/3457/liga/BRA.COPA_DO_BRAZIL');
+    
+        // Obtendo o corpo da resposta HTTP
+        $html = (string) $response->getBody();
+    
+        // Criando uma instância do Crawler para analisar o HTML
+        $crawler = new Crawler($html);
+    
+        // Inicializando um array para armazenar os dados da tabela
+        $rows = [];
+    
+        // Iterando sobre as linhas da tabela e extraindo os dados das células
+        $crawler->filter('table tr')->each(function ($row, $i) use (&$rows) {
+            // Ignorar a primeira linha (cabeçalhos das colunas)
+            if ($i > 0) {
+                $rowData = [];
+                $row->filter('td')->each(function ($cell) use (&$rowData) {
+                    $rowData[] = $cell->text();
+                });
+                $rows[] = $rowData;
+            }
+        });
+    
+        // Retornando a view 'chances' com os dados da tabela compactados
+        return view('elenco', compact('rows'));
+    }
 }

@@ -70,9 +70,50 @@
         <!-- Swiper-->
         <section class="section section-md bg-gray-100">
             <div class="container">
-                <div style="align-items: center">
-                    <h1>Elenco</h1>
+              <div style="align-items: center">
+                <article class="heading-component">
+                  <div class="heading-component-inner">
+                    <h5 class="heading-component-title">Jogadores/h5>
+                  </div>
+                </article>
+                <div class="table-custom-responsive">
+                  <table class="table-custom table-standings table-classic">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th colspan="2">NOMES</th>
+                        <th>POS</th>
+                        <th>IDADE</th>
+                        <th>ALT</th>
+                        <th>P</th>
+                        <th>NAC</th>
+                        <th>J</th>
+                        <th>SUB</th>
+                        <th>S</th>
+                        <th>GC</th>
+                        <th>A</th>
+                        <th>FC</th>
+                        <th>FS</th>
+                        <th>CA</th>
+                        <th>CV</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach($rows as $index => $row)
+                      <tr>
+                        <!-- Verifica se não é a primeira linha antes de imprimir o índice -->
+                        <td>{{ $index > 0 ? $index : '' }}</td>
+                        @foreach($row as $cell)
+                        <td>{{ $cell }}</td>
+                        @endforeach
+                      </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+                  
+                  
                 </div>
+              </div>
             </div>
         </section>
         <footer class="section footer-classic footer-classic-dark context-dark">

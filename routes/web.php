@@ -7,9 +7,7 @@ use App\Http\Controllers\ChancesController;
 //     return view('welcome');
 // });
 
-Route::get('/Elenco', function () {
-    return view('elenco');
-});
+Route::get('/Elenco', [ChancesController::class, 'showTable2']);
 
 Route::get('/', [ChancesController::class, 'readExcel']);
 
