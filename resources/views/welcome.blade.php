@@ -68,32 +68,8 @@
             </div>
           </header>
         <!-- Swiper-->
-        <section class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="true" data-autoplay="4000" data-simulate-touch="false" data-slide-effect="fade">
+        <section class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="false" data-autoplay="4000" data-simulate-touch="false" data-slide-effect="fade">
             <div class="swiper-wrapper">
-                <div class="swiper-slide text-center" data-slide-bg="images/slider-1-slide-1-1920x671.jpg">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-6">
-                                <div class="swiper-slide-caption">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #212121">O maior site de probabilidade esportiva com IA do Brasil,</h1>
-                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #212121">alcançando mais de 90% de assertividade.</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="/QuemSomos">Confira</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide" data-slide-bg="images/slider-1-slide-2-1920x671.jpg">
-                    <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-xl-5">
-                                <div class="swiper-slide-caption">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #212121">Amamos futebol</h1>
-                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #212121">confira o atual elenco do seu time.</h4><a class="button button-primary" data-caption-animate="fadeInUp" data-caption-delay="300" href="/Elenco">Confira</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="swiper-slide" data-slide-bg="images/slider-1-slide-3-1920x671.jpg">
                     <div class="container">
                         <div class="row">
@@ -107,9 +83,6 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-button swiper-button-prev"></div>
-            <div class="swiper-button swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
         </section>
         <section class="section section-md bg-gray-100">
           <div class="container">
