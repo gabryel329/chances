@@ -93,7 +93,7 @@
             </div>
         </header>
         <!-- Swiper-->
-        <section class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="false"
+        <section style="margin-top: -50px; margin-bottom: -40px" class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="false"
             data-autoplay="4000" data-simulate-touch="false" data-slide-effect="fade">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" data-slide-bg="images/slider-1-slide-3-1920x671.jpg">
@@ -132,7 +132,7 @@
                                         <div class="row">
                                             @foreach ($chunk as $value)
                                                 <div class="col-lg-4">
-                                                    <div class="card text-center">
+                                                    <div class="card text-center" style="border: 4px solid #9EEB47">
                                                         <div class="card-header" style="text-align: center">
                                                             <h5>Campeonato Brasileiro</h5>
                                                         </div>
@@ -211,7 +211,7 @@
                                       <div class="row">
                                           @foreach ($chunk as $value)
                                               <div class="col-lg-4">
-                                                  <div class="card text-center">
+                                                <div class="card text-center" style="border: 4px solid #9EEB47">
                                                       <div class="card-header" style="text-align: center">
                                                           <h5>Campeonato Brasileiro</h5>
                                                       </div>

@@ -98,7 +98,7 @@
                                       <div class="row">
                                           @foreach ($chunk as $value)
                                               <div class="col-lg-4">
-                                                  <div class="card text-center">
+                                                    <div class="card text-center" style="border: 4px solid #9EEB47">
                                                       <div class="card-header" style="text-align: center">
                                                           <h5>Campeonato Brasileiro</h5>
                                                       </div>
