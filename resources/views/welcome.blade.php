@@ -79,9 +79,9 @@
                                         <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="/Chances">Chances</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="heading-component-title"
+                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="/Elenco">Elenco</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                                 <!-- Force next columns to break to new line -->

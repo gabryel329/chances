@@ -80,9 +80,9 @@
                                         <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="./Chances">Chances</a>
                                         </li>
-                                        <li class="rd-nav-item"><a class="heading-component-title"
+                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="./Elenco">Elenco</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </div>
                                 <!-- Force next columns to break to new line -->
@@ -115,63 +115,68 @@
                                                         <div class="card-header" style="text-align: center">
                                                             <h5>Campeonato Brasileiro</h5>
                                                         </div>
-                                                        <div class="card-body">
+                                                        <div class="card-body" style="background-color: #c9c9c9">
                                                             <p style="text-align: center; color: #212121">
                                                                 <img src="images/Vitória.png">
                                                             </p>
+                                                            <h5 class="text-lg font-bold">Chances</h5>
+                                                            <br>
+                                                            <div class="grid text-center">
+                                                                <div class="row">
+                                                                    <div class="col-4">
+                                                                        <h6>Campeão</h6>
+                                                                        <div>
+                                                                            <p style="color: #212121">
+                                                                                {{ $value[0] }}%
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <h6>Libertadores</h6>
+                                                                        <div>
+                                                                            <p style="color: #212121">
+                                                                                {{ $value[1] }}%
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <h6>SulAmericana</h6>
+                                                                        <div>
+                                                                            <p style="color: #212121">
+                                                                                {{ $value[2] }}%
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-4">
+                                                                        <h6>Rebaixamento</h6>
+                                                                        <div>
+                                                                            <p style="color: #212121">
+                                                                                {{ $value[3] }}%
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <h6>Previsão</h6>
+                                                                        <div>
+                                                                            <p style="color: #212121">
+                                                                                {{ $value[4] }}°
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                        <h6>Posisão</h6>
+                                                                        <div>
+                                                                            <p style="color: #212121">
+                                                                                {{ $value[5] }}°
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <h5 class="text-lg font-bold">Chances</h5>
-                                                        <br>
-                                                        <div class="grid text-center">
-                                                            <div class="row">
-                                                                <div class="col-4">
-                                                                    <h6>Campeão</h6>
-                                                                    <div>
-                                                                        <p style="color: #212121">{{ $value[0] }}%
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <h6>Libertadores</h6>
-                                                                    <div>
-                                                                        <p style="color: #212121">{{ $value[1] }}%
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <h6>SulAmericana</h6>
-                                                                    <div>
-                                                                        <p style="color: #212121">{{ $value[2] }}%
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row">
-                                                              <div class="col-4">
-                                                                  <h6>Rebaixamento</h6>
-                                                                  <div>
-                                                                      <p style="color: #212121">{{ $value[3] }}%
-                                                                      </p>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-4">
-                                                                  <h6>Previsão</h6>
-                                                                  <div>
-                                                                      <p style="color: #212121">{{ $value[4] }}°
-                                                                      </p>
-                                                                  </div>
-                                                              </div>
-                                                              <div class="col-4">
-                                                                <h6>Posisão</h6>
-                                                                <div>
-                                                                    <p style="color: #212121">{{ $value[5] }}°
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                          </div>
-                                                          <br>
-                                                            <div class="card-footer">
-                                                            </div>
+                                                        <div class="card-footer">
                                                         </div>
                                                     </div>
                                                 </div>
