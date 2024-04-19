@@ -42,7 +42,7 @@
                   <div class="container text-center">
                     <div class="row">
                       <div class="col-6 col-sm-6">
-                        <div style="text-align: left;">
+                        <div>
                           <a href="./">
                             <img src="images/logo-soccer-default-95x126.png" alt="" width="95" height="126"/>
                             <h6 class="heading-component-title">Chances do Vitória</h6>
@@ -73,45 +73,32 @@
               <div style="align-items: center">
                 <article class="heading-component">
                   <div class="heading-component-inner">
-                    <h5 class="heading-component-title">Jogadores/h5>
+                    <h5 class="heading-component-title">Jogadores</h5>
                   </div>
                 </article>
                 <div class="table-custom-responsive">
                   <table class="table-custom table-standings table-classic">
                     <thead>
                       <tr>
-                        <th>#</th>
-                        <th colspan="2">NOMES</th>
+                        <th>NOMES</th>
                         <th>POS</th>
                         <th>IDADE</th>
                         <th>ALT</th>
                         <th>P</th>
-                        <th>NAC</th>
-                        <th>J</th>
-                        <th>SUB</th>
-                        <th>S</th>
-                        <th>GC</th>
-                        <th>A</th>
-                        <th>FC</th>
-                        <th>FS</th>
-                        <th>CA</th>
-                        <th>CV</th>
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach($rows as $index => $row)
-                      <tr>
-                        <!-- Verifica se não é a primeira linha antes de imprimir o índice -->
-                        <td>{{ $index > 0 ? $index : '' }}</td>
-                        @foreach($row as $cell)
-                        <td>{{ $cell }}</td>
+                        @foreach($rows as $row)
+                            <tr>
+                                @foreach($row as $cell)
+                                <td>{{ $cell }}</td>
+                                @endforeach
+                            </tr>
                         @endforeach
-                      </tr>
-                      @endforeach
                     </tbody>
                   </table>
-                  
-                  
+
+
                 </div>
               </div>
             </div>
