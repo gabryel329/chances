@@ -83,130 +83,83 @@
         </section>
         <section class="section section-md bg-gray-100">
           <div class="container">
-            <!-- Heading Component-->
-            <article class="heading-component">
-                <div class="heading-component-inner">
-                    <h5 class="heading-component-title">Últimos Jogos</h5>
-                </div>
-            </article>
-            <div>
-              <div class="col-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-lg-4">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitória.png" alt="Vitoria">
-                                Vitória x Bahia
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitória.png" alt="Vitoria">
-                                Vitória x Bahia
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitória.png" alt="Vitoria">
-                                Vitória x Bahia
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitória.png" alt="Vitoria">
-                                Vitória x Bahia
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="card text-center">
-                            <div class="card-header" style="text-align: center">
-                              <h5>Campeonato Brasileiro</h5>
-                            </div>
-                            <div class="card-body" style="background-color: #c9c9c9">
-                              <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
-                              <h6 style="text-align: center">
-                                <img src="images/vitória.png" alt="Vitoria">
-                                Vitória x Bahia
-                                <img src="images/bahia.png" alt="Bahia">
-                              </h6>
-                            </div>
-                            <div class="card-footer">
-                              <p style="text-align: center" class="card-text">Manoel Barradas</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+              <!-- Heading Component-->
+              <article class="heading-component">
+                  <div class="heading-component-inner">
+                      <h5 class="heading-component-title">Últimos Jogos</h5>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+              </article>
+              <div>
+                  <div class="col-12">
+                      <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                              @foreach ($chunks as $index => $chunk)
+                                  <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                      <div class="row">
+                                          @foreach ($chunk as $value)
+                                              <div class="col-lg-4">
+                                                  <div class="card text-center">
+                                                      <div class="card-header" style="text-align: center">
+                                                          <h5>Campeonato Brasileiro</h5>
+                                                      </div>
+                                                      <div class="card-body" style="background-color: #c9c9c9">
+                                                          <p style="text-align: center; color: #212121">
+                                                              <img src="images/{{ strtolower($value[0]) }}.png">
+                                                              {{ $value[0] }} {{ $value[2] }} x {{ $value[3] }} {{ $value[1] }}
+                                                              <img src="images/{{ strtolower($value[1]) }}.png">
+                                                          </p>
+                                                      </div>
+                                                      <div class="card-footer">
+                                                          <h5 class="text-lg font-bold">Chances</h5>
+                                                          <br>
+                                                          <div class="grid text-center">
+                                                              <div class="row">
+                                                                  <div class="col-4">
+                                                                      <h6 style="color: green">Vitória</h6>
+                                                                      <div>
+                                                                          <p style="color: #212121">{{ $value[4] }}%</p>
+                                                                          {{-- Adicione outras informações aqui --}}
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-4">
+                                                                      <h6>Empate</h6>
+                                                                      <div>
+                                                                          <p style="color: #212121">{{ $value[5] }}%</p>
+                                                                          {{-- Adicione outras informações aqui --}}
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-4">
+                                                                      <h6 style="color: red">Derrota</h6>
+                                                                      <div>
+                                                                          <p style="color: #212121">{{ $value[6] }}%</p>
+                                                                          {{-- Adicione outras informações aqui --}}
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          @endforeach
+                                      </div>
+                                  </div>
+                              @endforeach
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
+
               </div>
-            </div>
-
-
           </div>
-        </section>
+      </section>
         <footer class="section footer-classic footer-classic-dark context-dark">
             <div class="footer-classic-aside footer-classic-darken">
                 <div class="container">
