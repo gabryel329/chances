@@ -43,7 +43,7 @@
                   <div class="container text-center">
                     <div class="row">
                       <div class="col-6 col-sm-6">
-                        <div style="text-align: left;">
+                        <div>
                           <a href="./">
                             <img src="images/logo-soccer-default-95x126.png" alt="" width="95" height="126"/>
                             <h6 class="heading-component-title">Chances do Vitória</h6>
@@ -103,8 +103,8 @@
                             <div class="card-body" style="background-color: #c9c9c9">
                               <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
                               <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
+                                <img src="images/vitória.png" alt="Vitoria">
+                                Vitória x Bahia
                                 <img src="images/bahia.png" alt="Bahia">
                               </h6>
                             </div>
@@ -121,8 +121,8 @@
                             <div class="card-body" style="background-color: #c9c9c9">
                               <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
                               <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
+                                <img src="images/vitória.png" alt="Vitoria">
+                                Vitória x Bahia
                                 <img src="images/bahia.png" alt="Bahia">
                               </h6>
                             </div>
@@ -139,8 +139,8 @@
                             <div class="card-body" style="background-color: #c9c9c9">
                               <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
                               <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
+                                <img src="images/vitória.png" alt="Vitoria">
+                                Vitória x Bahia
                                 <img src="images/bahia.png" alt="Bahia">
                               </h6>
                             </div>
@@ -161,8 +161,8 @@
                             <div class="card-body" style="background-color: #c9c9c9">
                               <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
                               <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
+                                <img src="images/vitória.png" alt="Vitoria">
+                                Vitória x Bahia
                                 <img src="images/bahia.png" alt="Bahia">
                               </h6>
                             </div>
@@ -179,8 +179,8 @@
                             <div class="card-body" style="background-color: #c9c9c9">
                               <h6 style="text-align: center">SÁB 03/10/2020 12:00</h6>
                               <h6 style="text-align: center">
-                                <img src="images/vitoria.png" alt="Vitoria"> 
-                                Vitória x Bahia 
+                                <img src="images/vitória.png" alt="Vitoria">
+                                Vitória x Bahia
                                 <img src="images/bahia.png" alt="Bahia">
                               </h6>
                             </div>
@@ -203,8 +203,8 @@
                 </div>
               </div>
             </div>
-            
-            
+
+
           </div>
         </section>
         <footer class="section footer-classic footer-classic-dark context-dark">
