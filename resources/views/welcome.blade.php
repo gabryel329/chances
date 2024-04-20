@@ -63,7 +63,7 @@
                         <div class="container text-center">
                             <div class="row">
                                 <div class="col-6 col-sm-6">
-                                    <div>
+                                    <div style="text-align: left;">
                                         <a href="./">
                                             <img src="images/logo-soccer-default-95x126.png" alt=""
                                                 width="95" height="126" />
