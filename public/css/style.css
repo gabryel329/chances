@@ -15359,7 +15359,7 @@ html.tablet .ui-to-top {
 	height: 46px;
 	line-height: 46px;
 	cursor: pointer;
-	color: #b7b7b7;
+	color: #000;
 	background-color: transparent;
 	border: none;
 	display: none;
@@ -15387,7 +15387,7 @@ html.tablet .ui-to-top {
 .rd-navbar-toggle span, .rd-navbar-toggle span::before, .rd-navbar-toggle span::after {
 	width: 30px;
 	height: 4px;
-	background-color: #b7b7b7;
+	background-color: #35363c;
 	backface-visibility: hidden;
 	border-radius: 3px;
 }
@@ -16436,7 +16436,7 @@ html.tablet .ui-to-top {
 
 .rd-navbar-fixed .heading-component-title {
 	font-size: 13px;
-	color: #e7e8ef;
+	color: #000;
 }
 
 .rd-navbar-fixed .cart-inline-toggled-outer {
@@ -16480,11 +16480,11 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
-	background: #2c2d31;
+	background: #9EEB47;
 }
 
 .rd-navbar-fixed .rd-navbar-main {
-	background: #35363c;
+	background: #88CC3C;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
