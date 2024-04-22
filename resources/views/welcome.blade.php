@@ -101,9 +101,9 @@
                         <div class="row">
                             <div class="col-xl-5">
                                 <div class="swiper-slide-caption">
-                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #212121">
+                                    <h1 data-caption-animate="fadeInUp" data-caption-delay="100" style="color: #fff">
                                         Melhor Site</h1>
-                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #212121">
+                                    <h4 data-caption-animate="fadeInUp" data-caption-delay="200" style="color: #fff">
                                         para noticias de futebol, atualizações <br class="d-none d-xl-block"> e
                                         resultados de jogos.</h4><a class="button button-primary"
                                         data-caption-animate="fadeInUp" data-caption-delay="300"
