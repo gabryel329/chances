@@ -19,7 +19,7 @@
 
 			windowReady = false,
 			isNoviBuilder = false,
-			preloaderAnimateionDuration = 300,
+			preloaderAnimateionDuration = 3,
 			loaderTimeoutId,
 
 			plugins = {
@@ -102,7 +102,7 @@
 			pageTransition({
 				target:            document.querySelector('.page'),
 				delay:             0,
-				duration:          500,
+				duration:          5,
 				classIn:           'fadeIn',
 				classOut:          'fadeOut',
 				classActive:       'animated',
@@ -112,7 +112,7 @@
 				onTransitionStart: function (options) {
 					setTimeout(function () {
 						plugins.preloader.removeClass('loaded');
-					}, options.duration * .75);
+					}, options.duration * .05);
 				},
 				onReady:           function () {
 					plugins.preloader.addClass('loaded');
@@ -132,7 +132,7 @@
 							from:  node.getAttribute('data-from'),
 							to:    node.getAttribute('data-to'),
 							count: node.getAttribute('data-count'),
-							tick:  100,
+							tick:  1,
 						});
 			}
 		}
@@ -166,7 +166,7 @@
 						container = plugins.progressLinear[i],
 						counter = aCounter({
 							node:     container.querySelector('.progress-value'),
-							duration: container.getAttribute('progress-value') || 1000,
+							duration: container.getAttribute('progress-value') || 1,
 							onStart:  function () {
 								this.custom.bar.style.width = this.params.to + '%';
 							}
@@ -182,7 +182,7 @@
 						}
 					}).bind(counter),
 					onBlur:    (function () {
-						this.params.to = parseInt(this.params.node.textContent, 10);
+						this.params.to = parseInt(this.params.node.textContent, 1);
 						this.run();
 					}).bind(counter)
 				};
@@ -204,7 +204,7 @@
 						container = plugins.progressCircle[i],
 						counter = aCounter({
 							node:     container.querySelector('.progress-circle-counter'),
-							duration: 500,
+							duration: 5,
 							onUpdate: function (value) {
 								this.custom.bar.render(value * 3.6);
 							}
@@ -222,7 +222,7 @@
 						}
 					}).bind(counter),
 					onBlur:    (function () {
-						this.params.to = parseInt(this.params.node.textContent, 10);
+						this.params.to = parseInt(this.params.node.textContent, 1);
 						this.run();
 					}).bind(counter)
 				};
@@ -251,7 +251,7 @@
 						var value = Math.abs(chartDataListItems[k].getAttribute('data-value') * 1);
 						ratioValues.push({});
 						ratioValues[k].title = chartDataListItems[k].innerHTML;
-						ratioValues[k].value = value ? value : 10;
+						ratioValues[k].value = value ? value : 1;
 					}
 
 					$element.drawDoughnutChart(

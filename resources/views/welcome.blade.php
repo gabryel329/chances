@@ -93,7 +93,7 @@
             </div>
         </header>
         <!-- Swiper-->
-        <section style="margin-top: -50px; margin-bottom: -40px" class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="false"
+        {{-- <section style="margin-top: -50px; margin-bottom: -40px" class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="false"
             data-autoplay="4000" data-simulate-touch="false" data-slide-effect="fade">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" data-slide-bg="images/slider-1-slide-3-1920x671.jpg">
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <section class="section section-md bg-gray-100">
             <div class="container">
                 <!-- Heading Component-->
@@ -148,27 +148,25 @@
                                                             <br>
                                                             <div class="grid text-center">
                                                                 <div class="row">
-                                                                    <div class="col-4">
+                                                                    <div class="col-12">
                                                                         <h6 style="color: green">Vitória</h6>
                                                                         <div>
                                                                             <p style="color: #212121">{{ $value[2] }}%</p>
                                                                             {{-- Adicione outras informações aqui --}}
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-4">
+                                                                    {{-- <div class="col-4">
                                                                         <h6>Empate</h6>
                                                                         <div>
                                                                             <p style="color: #212121">{{ $value[3] }}%</p>
-                                                                            {{-- Adicione outras informações aqui --}}
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="col-4">
+                                                                    </div> --}}
+                                                                    {{-- <div class="col-4">
                                                                         <h6 style="color: red">Derrota</h6>
                                                                         <div>
                                                                             <p style="color: #212121">{{ $value[4] }}%</p>
-                                                                            {{-- Adicione outras informações aqui --}}
                                                                         </div>
-                                                                    </div>
+                                                                    </div> --}}
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -227,27 +225,25 @@
                                                           <br>
                                                           <div class="grid text-center">
                                                               <div class="row">
-                                                                  <div class="col-4">
+                                                                  <div class="col-12">
                                                                       <h6 style="color: green">Vitória</h6>
                                                                       <div>
                                                                           <p style="color: #212121">{{ $value[4] }}%</p>
                                                                           {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
-                                                                  <div class="col-4">
+                                                                  {{-- <div class="col-4">
                                                                       <h6>Empate</h6>
                                                                       <div>
                                                                           <p style="color: #212121">{{ $value[5] }}%</p>
-                                                                          {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
                                                                   <div class="col-4">
                                                                       <h6 style="color: red">Derrota</h6>
                                                                       <div>
                                                                           <p style="color: #212121">{{ $value[6] }}%</p>
-                                                                          {{-- Adicione outras informações aqui --}}
                                                                       </div>
-                                                                  </div>
+                                                                  </div> --}}
                                                               </div>
                                                           </div>
                                                       </div>

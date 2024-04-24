@@ -114,27 +114,25 @@
                                                           <br>
                                                           <div class="grid text-center">
                                                               <div class="row">
-                                                                  <div class="col-4">
+                                                                  <div class="col-12">
                                                                       <h6 style="color: green">Vitória</h6>
                                                                       <div>
                                                                           <p style="color: #212121">{{ $value[4] }}%</p>
                                                                           {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
-                                                                  <div class="col-4">
+                                                                  {{-- <div class="col-4">
                                                                       <h6>Empate</h6>
                                                                       <div>
                                                                           <p style="color: #212121">{{ $value[5] }}%</p>
-                                                                          {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
                                                                   <div class="col-4">
                                                                       <h6 style="color: red">Derrota</h6>
                                                                       <div>
                                                                           <p style="color: #212121">{{ $value[6] }}%</p>
-                                                                          {{-- Adicione outras informações aqui --}}
                                                                       </div>
-                                                                  </div>
+                                                                  </div> --}}
                                                               </div>
                                                           </div>
                                                       </div>
