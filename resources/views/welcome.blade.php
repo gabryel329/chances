@@ -125,18 +125,18 @@
                 </article>
                 <div>
                     <div class="col-12">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 @foreach ($chunks1 as $index => $chunk)
                                     <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                         <div class="row">
                                             @foreach ($chunk as $value)
-                                                <div class="col-lg-4">
-                                                    <div class="card text-center" style="border: 4px solid #9EEB47">
+                                                <div class="col-lg-4" style="margin: 5px 0px;">
+                                                    <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
                                                         <div class="card-header" style="text-align: center">
                                                             <h5>Campeonato Brasileiro</h5>
                                                         </div>
-                                                        <div class="card-body" style="background-color: #c9c9c9">
+                                                        <div class="card-body" style="background-color: #e2e1e1">
                                                             <p style="text-align: center; color: #212121">
                                                                 <img src="images/{{ strtolower($value[0]) }}.png">
                                                                 {{ $value[0] }} x {{ $value[1] }}
@@ -179,12 +179,12 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -204,18 +204,18 @@
               </article>
               <div>
                   <div class="col-12">
-                      <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                      <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
                           <div class="carousel-inner">
                               @foreach ($chunks2 as $index => $chunk)
                                   <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                       <div class="row">
                                           @foreach ($chunk as $value)
-                                              <div class="col-lg-4">
-                                                <div class="card text-center" style="border: 4px solid #9EEB47">
+                                              <div class="col-lg-4" style="margin: 5px 0px;">
+                                                <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
                                                       <div class="card-header" style="text-align: center">
                                                           <h5>Campeonato Brasileiro</h5>
                                                       </div>
-                                                      <div class="card-body" style="background-color: #c9c9c9">
+                                                      <div class="card-body" style="background-color: #e2e1e1">
                                                           <p style="text-align: center; color: #212121">
                                                               <img src="images/{{ strtolower($value[0]) }}.png">
                                                               {{ $value[0] }} {{ $value[2] }} x {{ $value[3] }} {{ $value[1] }}
@@ -258,12 +258,12 @@
                                   </div>
                               @endforeach
                           </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
                               data-bs-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                           </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
                               data-bs-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
