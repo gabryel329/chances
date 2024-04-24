@@ -69,7 +69,7 @@
             </div>
           </header>
         <!-- Swiper-->
-        <section class="section section-md bg-gray-100">
+        <section class="section section-md bg-gray-100" style="margin-top: -50px;">
             <div class="container">
                 <div style="align-items: center">
                     <h1>Quem Somos</h1>

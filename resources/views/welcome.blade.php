@@ -115,7 +115,7 @@
                 </div>
             </div>
         </section> --}}
-        <section class="section section-md bg-gray-100">
+        <section class="section section-md bg-gray-100" style="margin-top: -50px;">
             <div class="container">
                 <!-- Heading Component-->
                 <article class="heading-component">
