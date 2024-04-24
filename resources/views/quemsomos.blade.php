@@ -52,10 +52,10 @@
                       </div>
                       <div class="col-6 col-sm-6">
                         <ul class="rd-navbar-nav" style="margin-top: 20px;">
-                          <li class="rd-nav-item"><a class="heading-component-title" href="./QuemSomos">Quem Somos</a>
+                          {{-- <li class="rd-nav-item"><a class="heading-component-title" href="./QuemSomos">Quem Somos</a>
                           </li>
                           <li class="rd-nav-item"><a class="heading-component-title" href="./Chances">Chances</a>
-                          </li>
+                          </li> --}}
                           {{-- <li class="rd-nav-item"><a class="heading-component-title" href="./Elenco">Elenco</a>
                           </li> --}}
                         </ul>
@@ -69,7 +69,7 @@
             </div>
           </header>
         <!-- Swiper-->
-        <section class="section section-md bg-gray-100" style="margin-top: -50px;">
+        <section class="section section-md bg-gray-100" style="margin-top: -30px;">
             <div class="container">
                 <div style="align-items: center">
                     <h1>Quem Somos</h1>
@@ -97,17 +97,18 @@
                                   <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                       <div class="row">
                                           @foreach ($chunk as $value)
+                                            <a>
                                               <div class="col-lg-4" style="margin: 5px 0px;">
                                                     <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
                                                       <div class="card-header" style="text-align: center">
                                                           <h5>Campeonato Brasileiro</h5>
                                                       </div>
                                                       <div class="card-body" style="background-color: #e2e1e1">
-                                                          <p style="text-align: center; color: #212121">
-                                                              <img src="images/{{ strtolower($value[0]) }}.png">
-                                                              {{ $value[0] }} {{ $value[2] }} x {{ $value[3] }} {{ $value[1] }}
-                                                              <img src="images/{{ strtolower($value[1]) }}.png">
-                                                          </p>
+                                                            <p style="text-align: center; color: #212121">
+                                                                <img src="images/{{ strtolower($value->timecasa) }}.png">
+                                                                {{ $value->timecasa }} {{ $value->golscasa }} x {{ $value->golsfora }} {{ $value->timefora }}
+                                                                <img src="images/{{ strtolower($value->timefora) }}.png">
+                                                            </p>
                                                       </div>
                                                       <div class="card-footer">
                                                           <h5 class="text-lg font-bold">Chances</h5>
@@ -117,7 +118,7 @@
                                                                   <div class="col-12">
                                                                       <h6 style="color: green">Vitória</h6>
                                                                       <div>
-                                                                          <p style="color: #212121">{{ $value[4] }}%</p>
+                                                                          <p style="color: #212121">{{ $value->vitoria }}%</p>
                                                                           {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
@@ -138,6 +139,7 @@
                                                       </div>
                                                   </div>
                                               </div>
+                                            </a>
                                           @endforeach
                                       </div>
                                   </div>

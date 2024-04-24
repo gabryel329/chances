@@ -7,10 +7,14 @@ use App\Http\Controllers\ChancesController;
 //     return view('welcome');
 // });
 
-Route::get('/Elenco', [ChancesController::class, 'showTable2']);
+// Route::get('/Elenco', [ChancesController::class, 'showTable2']);
 
-Route::get('/', [ChancesController::class, 'readExcel']);
+Route::get('/', [ChancesController::class, 'welcome']);
 
-Route::get('/QuemSomos', [ChancesController::class, 'readExcel2']);
+Route::get('/QuemSomos', [ChancesController::class, 'quemsomos']);
 
-Route::get('/Chances', [ChancesController::class, 'showTable']);
+Route::get('/Chances', [ChancesController::class, 'chances']);
+
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

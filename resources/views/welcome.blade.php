@@ -73,12 +73,12 @@
                                 </div>
                                 <div class="col-6 col-sm-6">
                                     <ul class="rd-navbar-nav" style="margin-top: 20px;">
-                                        <li class="rd-nav-item"><a class="heading-component-title"
+                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="/QuemSomos">Quem Somos</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="/Chances">Chances</a>
-                                        </li>
+                                        </li> --}}
                                         {{-- <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="/Elenco">Elenco</a>
                                         </li> --}}
@@ -115,7 +115,13 @@
                 </div>
             </div>
         </section> --}}
-        <section class="section section-md bg-gray-100" style="margin-top: -50px;">
+        <section class="section section-md bg-gray-100" style="margin-top: -30px;">
+            <div class="row justify-content-end">
+                <div class="col-4" style="text-align: center">
+                  <h6>Última atualização:</h6>
+                  <p>24/04/2024</p>
+                </div>
+              </div>
             <div class="container">
                 <!-- Heading Component-->
                 <article class="heading-component">
@@ -138,9 +144,9 @@
                                                         </div>
                                                         <div class="card-body" style="background-color: #e2e1e1">
                                                             <p style="text-align: center; color: #212121">
-                                                                <img src="images/{{ strtolower($value[0]) }}.png">
-                                                                {{ $value[0] }} x {{ $value[1] }}
-                                                                <img src="images/{{ strtolower($value[1]) }}.png">
+                                                                <img src="images/{{ strtolower($value->timecasa) }}.png">
+                                                                {{ $value->timecasa }} x {{ $value->timefora }}
+                                                                <img src="images/{{ strtolower($value->timefora) }}.png">
                                                             </p>
                                                         </div>
                                                         <div class="card-footer">
@@ -151,7 +157,7 @@
                                                                     <div class="col-12">
                                                                         <h6 style="color: green">Vitória</h6>
                                                                         <div>
-                                                                            <p style="color: #212121">{{ $value[2] }}%</p>
+                                                                            <p style="color: #212121">{{ $value->vitoria }}%</p>
                                                                             {{-- Adicione outras informações aqui --}}
                                                                         </div>
                                                                     </div>
@@ -214,11 +220,11 @@
                                                           <h5>Campeonato Brasileiro</h5>
                                                       </div>
                                                       <div class="card-body" style="background-color: #e2e1e1">
-                                                          <p style="text-align: center; color: #212121">
-                                                              <img src="images/{{ strtolower($value[0]) }}.png">
-                                                              {{ $value[0] }} {{ $value[2] }} x {{ $value[3] }} {{ $value[1] }}
-                                                              <img src="images/{{ strtolower($value[1]) }}.png">
-                                                          </p>
+                                                            <p style="text-align: center; color: #212121">
+                                                                <img src="images/{{ strtolower($value->timecasa) }}.png">
+                                                                {{ $value->timecasa }} {{ $value->golscasa }} x {{ $value->golsfora }} {{ $value->timefora }}
+                                                                <img src="images/{{ strtolower($value->timefora) }}.png">
+                                                            </p>
                                                       </div>
                                                       <div class="card-footer">
                                                           <h5 class="text-lg font-bold">Chances</h5>
@@ -228,7 +234,7 @@
                                                                   <div class="col-12">
                                                                       <h6 style="color: green">Vitória</h6>
                                                                       <div>
-                                                                          <p style="color: #212121">{{ $value[4] }}%</p>
+                                                                          <p style="color: #212121">{{ $value->vitoria }}%</p>
                                                                           {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>

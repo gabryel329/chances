@@ -74,12 +74,12 @@
                                 </div>
                                 <div class="col-6 col-sm-6">
                                     <ul class="rd-navbar-nav" style="margin-top: 20px;">
-                                        <li class="rd-nav-item"><a class="heading-component-title"
+                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="./QuemSomos">Quem Somos</a>
                                         </li>
                                         <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="./Chances">Chances</a>
-                                        </li>
+                                        </li> --}}
                                         {{-- <li class="rd-nav-item"><a class="heading-component-title"
                                                 href="./Elenco">Elenco</a>
                                         </li> --}}
@@ -94,7 +94,7 @@
             </div>
         </header>
         <!-- Swiper-->
-        <section class="section section-md bg-gray-100" style="margin-top: -50px;">
+        <section class="section section-md bg-gray-100" style="margin-top: -30px;">
             <div class="container">
                 <!-- Heading Component-->
                 <article class="heading-component">
@@ -127,7 +127,7 @@
                                                                         <h6>Campeão</h6>
                                                                         <div>
                                                                             <p style="color: #212121">
-                                                                                {{ $value[0] }}%
+                                                                                {{ $value->campeao }}%
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -135,7 +135,7 @@
                                                                         <h6>Libertadores</h6>
                                                                         <div>
                                                                             <p style="color: #212121">
-                                                                                {{ $value[1] }}%
+                                                                                {{ $value->libertadores }}%
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -143,7 +143,7 @@
                                                                         <h6>SulAmericana</h6>
                                                                         <div>
                                                                             <p style="color: #212121">
-                                                                                {{ $value[2] }}%
+                                                                                {{ $value->sulamericana }}%
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -153,7 +153,7 @@
                                                                         <h6>Rebaixamento</h6>
                                                                         <div>
                                                                             <p style="color: #212121">
-                                                                                {{ $value[3] }}%
+                                                                                {{ $value->rebaixamento }}%
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -161,15 +161,15 @@
                                                                         <h6>Previsão</h6>
                                                                         <div>
                                                                             <p style="color: #212121">
-                                                                                {{ $value[4] }}°
+                                                                                {{ $value->previsao }}°
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-4">
-                                                                        <h6>Posisão</h6>
+                                                                        <h6>Posição</h6>
                                                                         <div>
                                                                             <p style="color: #212121">
-                                                                                {{ $value[5] }}°
+                                                                                {{ $value->posicao }}°
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -185,20 +185,18 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExample" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-
                     </div>
                 </div>
+                
         </section>
         <section class="section section-md bg-gray-100">
             <div class="container">
