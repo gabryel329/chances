@@ -146,7 +146,7 @@ class ChancesController extends Controller
         $this->atualiza();
 
         // Retorna os valores como JSON
-        return response()->json(['chunks1' => $chunks1, 'chunks2' => $chunks2]);
+        return response()->json(['Proximos_Jogos' => $chunks1, 'Jogos_Anteriores' => $chunks2]);
     }
 
 
