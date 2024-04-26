@@ -313,13 +313,3 @@
 </body>
 
 </html>
-
-
-{
-    "workbench.colorTheme": "Dracula",
-    "workbench.startupEditor": "none",
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "javascript.updateImportsOnFileMove.enabled": "always"
-}
