@@ -139,7 +139,7 @@
                                         <div class="row">
                                             @foreach ($chunk as $value)
                                                 <div class="col-lg-4" style="margin: 5px 0px;">
-                                                    <button class="button button-primary">
+                                                    <a href="/Chances" title="Veja as probabilidades.">
                                                         <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
                                                             <div class="card-header" style="text-align: center">
                                                                 <h5>Campeonato Brasileiro</h5>
@@ -179,7 +179,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </button>
+                                                    </a>
                                                 </div>
                                             @endforeach
                                         </div>
