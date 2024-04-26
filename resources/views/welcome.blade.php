@@ -116,13 +116,14 @@
             </div>
         </section> --}}
         <section class="section section-md bg-gray-100" style="margin-top: -30px;">
-            <div class="row justify-content-end">
-                <div class="col-4" style="text-align: center">
-                  <h6>Última atualização:</h6>
-                  <p>24/04/2024</p>
-                </div>
-              </div>
+            
             <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-4" style="text-align: center">
+                      <h6>Última atualização:</h6>
+                      <p>24/04/2024</p>
+                    </div>
+                  </div>
                 <!-- Heading Component-->
                 <article class="heading-component">
                     <div class="heading-component-inner">
