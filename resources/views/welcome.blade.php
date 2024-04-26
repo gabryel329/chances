@@ -119,20 +119,20 @@
             
             <div class="container">
                 <div class="row justify-content-end">
-                    <div class="col-4" style="text-align: center">
-                      <h6>Última atualização:</h6>
-                      <p>24/04/2024</p>
+                    <div class="col-6" style="text-align: center">
+                      
                     </div>
                   </div>
                 <!-- Heading Component-->
                 <article class="heading-component">
                     <div class="heading-component-inner">
                         <h5 class="heading-component-title">Proximos Jogos</h5>
+                        <p>Última atualização: 24/04/2024</p>
                     </div>
                 </article>
                 <div>
                     <div class="col-12">
-                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
                             <div class="carousel-inner">
                                 @foreach ($chunks1 as $index => $chunk)
                                     <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
@@ -184,12 +184,12 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -209,7 +209,7 @@
               </article>
               <div>
                   <div class="col-12">
-                      <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+                      <div id="carouselExampleDark2" class="carousel carousel-dark slide">
                           <div class="carousel-inner">
                               @foreach ($chunks2 as $index => $chunk)
                                   <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
@@ -261,12 +261,12 @@
                                   </div>
                               @endforeach
                           </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2"
                               data-bs-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                           </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2"
                               data-bs-slide="next">
                               <span class="carousel-control-next-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Next</span>
