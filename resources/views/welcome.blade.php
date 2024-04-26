@@ -139,45 +139,47 @@
                                         <div class="row">
                                             @foreach ($chunk as $value)
                                                 <div class="col-lg-4" style="margin: 5px 0px;">
-                                                    <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
-                                                        <div class="card-header" style="text-align: center">
-                                                            <h5>Campeonato Brasileiro</h5>
-                                                        </div>
-                                                        <div class="card-body" style="background-color: #e2e1e1">
-                                                            <p style="text-align: center; color: #212121">
-                                                                <img src="images/{{ strtolower($value->timecasa) }}.png">
-                                                                {{ $value->timecasa }} x {{ $value->timefora }}
-                                                                <img src="images/{{ strtolower($value->timefora) }}.png">
-                                                            </p>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <h5 class="text-lg font-bold">Chances</h5>
-                                                            <br>
-                                                            <div class="grid text-center">
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <h6 style="color: green">Vitória</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">{{ $value->vitoria }}%</p>
-                                                                            {{-- Adicione outras informações aqui --}}
+                                                    <button class="button button-primary">
+                                                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                                                            <div class="card-header" style="text-align: center">
+                                                                <h5>Campeonato Brasileiro</h5>
+                                                            </div>
+                                                            <div class="card-body" style="background-color: #e2e1e1">
+                                                                <p style="text-align: center; color: #212121">
+                                                                    <img src="images/{{ strtolower($value->timecasa) }}.png">
+                                                                    {{ $value->timecasa }} x {{ $value->timefora }}
+                                                                    <img src="images/{{ strtolower($value->timefora) }}.png">
+                                                                </p>
+                                                            </div>
+                                                            <div class="card-footer">
+                                                                <h5 class="text-lg font-bold">Chances</h5>
+                                                                <br>
+                                                                <div class="grid text-center">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <h6 style="color: green">Vitória</h6>
+                                                                            <div>
+                                                                                <p style="color: #212121">{{ $value->vitoria }}%</p>
+                                                                                {{-- Adicione outras informações aqui --}}
+                                                                            </div>
                                                                         </div>
+                                                                        {{-- <div class="col-4">
+                                                                            <h6>Empate</h6>
+                                                                            <div>
+                                                                                <p style="color: #212121">{{ $value[3] }}%</p>
+                                                                            </div>
+                                                                        </div> --}}
+                                                                        {{-- <div class="col-4">
+                                                                            <h6 style="color: red">Derrota</h6>
+                                                                            <div>
+                                                                                <p style="color: #212121">{{ $value[4] }}%</p>
+                                                                            </div>
+                                                                        </div> --}}
                                                                     </div>
-                                                                    {{-- <div class="col-4">
-                                                                        <h6>Empate</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">{{ $value[3] }}%</p>
-                                                                        </div>
-                                                                    </div> --}}
-                                                                    {{-- <div class="col-4">
-                                                                        <h6 style="color: red">Derrota</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">{{ $value[4] }}%</p>
-                                                                        </div>
-                                                                    </div> --}}
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </button>
                                                 </div>
                                             @endforeach
                                         </div>
@@ -311,3 +313,13 @@
 </body>
 
 </html>
+
+
+{
+    "workbench.colorTheme": "Dracula",
+    "workbench.startupEditor": "none",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}
