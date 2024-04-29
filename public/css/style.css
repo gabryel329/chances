@@ -24764,3 +24764,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	right: 0;
 	transform: translate(90%, -30%);
 }
+
+/* Estiliza o elemento que terá o efeito de hover */
+.elemento {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: transform 0.3s; /* Adiciona uma transição para o efeito de hover */
+}
+
+/* Adiciona o efeito de hover com animação de crescimento */
+.elemento:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do elemento em 10% */
+  transition: transform 0.3s; /* Mantém a transição para o efeito de hover */
+}
