@@ -159,7 +159,8 @@
                                                                         <div class="col-12">
                                                                             <h6 style="color: green">Vitória</h6>
                                                                             <div>
-                                                                                <p style="color: #212121">{{ $value->vitoria }}%</p>
+                                                                                <p style="color: #212121">{{ substr($value->vitoria, 0, 4) }}%
+                                                                                </p>
                                                                                 {{-- Adicione outras informações aqui --}}
                                                                             </div>
                                                                         </div>
@@ -239,7 +240,7 @@
                                                                   <div class="col-12">
                                                                       <h6 style="color: green">Vitória</h6>
                                                                       <div>
-                                                                          <p style="color: #212121">{{ $value->vitoria }}%</p>
+                                                                          <p style="color: #212121">{{ substr($value->vitoria, 0, 4) }}%</p>
                                                                           {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
