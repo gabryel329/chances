@@ -139,8 +139,8 @@
                                         <div class="row">
                                             @foreach ($chunk as $value)
                                                 <div class="col-lg-4" style="margin: 5px 0px;">
-                                                    <a href="/Chances" title="Veja as probabilidades.">
-                                                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                                                    <a class="elemento" href="/Chances" title="Veja as probabilidades.">
+                                                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%; width: 100%;">
                                                             <div class="card-header" style="text-align: center">
                                                                 <h5>Campeonato Brasileiro</h5>
                                                             </div>
@@ -218,8 +218,9 @@
                                   <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                                       <div class="row">
                                           @foreach ($chunk as $value)
-                                              <div class="col-lg-4" style="margin: 5px 0px;">
-                                                <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                                            <div class="col-lg-4">
+                                              <a class="elemento"  href="/Chances" title="Veja as probabilidades.">
+                                                <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%; width: 100%;">
                                                       <div class="card-header" style="text-align: center">
                                                           <h5>Campeonato Brasileiro</h5>
                                                       </div>
@@ -258,7 +259,8 @@
                                                           </div>
                                                       </div>
                                                   </div>
-                                              </div>
+                                                </a>
+                                            </div>
                                           @endforeach
                                       </div>
                                   </div>

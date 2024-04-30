@@ -24764,3 +24764,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	right: 0;
 	transform: translate(90%, -30%);
 }
+
+.elemento {
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	margin: 10px; /* adiciona um espaço entre os elementos */
+  }
+  
+  .elemento:hover {
+	transform: scale(1.06);
+  }
