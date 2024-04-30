@@ -66,7 +66,7 @@ class ChancesController extends Controller
         // Divide os arrays em conjuntos de três para o segundo carrossel
         $chunks2 = $dadosAnte->chunk(3);
 
-        $this->atualiza();
+        // $this->atualiza();
 
         // Retorna os valores para a view
         return view('welcome', compact(['chunks1', 'chunks2']));
@@ -117,7 +117,7 @@ class ChancesController extends Controller
         return view('quemsomos', compact('chunks'));
     }
 
-    public function atualiza()
+    public function atualizar()
     {
         // Caminho para o arquivo Excel
         $filePath = public_path('/CHANCES.xlsx');
@@ -190,16 +190,36 @@ class ChancesController extends Controller
         $cellE3Value = $sheet3->getCell('X7')->getValue();
         $cellF3Value = $sheet3->getCell('X8')->getValue();
 
-            // Substitua 'nome_da_tabela' pelo nome real da sua tabela
-            DB::table('chancesvit')->insert([
-                'campeao' => $cellA3Value,
-                'libertadores' => $cellB3Value,
-                'sulamericana' => $cellC3Value,
-                'rebaixamento' => $cellE3Value,
-                'previsao' => $cellF3Value,
-                'posicao' => $cellD3Value,
-            ]);
+        // Substitua 'nome_da_tabela' pelo nome real da sua tabela
+        DB::table('chancesvit')->insert([
+            'campeao' => $cellA3Value,
+            'libertadores' => $cellB3Value,
+            'sulamericana' => $cellC3Value,
+            'rebaixamento' => $cellE3Value,
+            'previsao' => $cellF3Value,
+            'posicao' => $cellD3Value,
+        ]);
+
+        return redirect()->back()->with('mensagem', 'Site atualizado com sucesso.');
+        
+    }
+
+    public function showUploadForm()
+    {
+        return view('upload');
     }
     
+    public function upload(Request $request)
+    {
+        $request->validate([
+            'excel_file' => 'required|mimes:xlsx,xls' // Validação para garantir que apenas arquivos Excel sejam aceitos
+        ]);
 
+        $file = $request->file('excel_file');
+
+        // Salvar o arquivo na pasta public com o nome CHANCES.xlsx
+        $file->move(public_path(), 'CHANCES.xlsx');
+
+        return redirect()->back()->with('mensagem', 'Arquivo Excel enviado e processado com sucesso.');
+    }
 }

@@ -134,8 +134,8 @@ class ChancesController extends Controller
     
     public function welcome()
     {
-        $dadosProx = Prox5j::all();
-        $dadosAnte = Ante5j::all();
+        $dadosProx = Prox5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
+        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
 
         // Divide os arrays em conjuntos de três para o primeiro carrossel
         $chunks1 = $dadosProx->chunk(3);
