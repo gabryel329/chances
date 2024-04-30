@@ -127,7 +127,7 @@
                 <article class="heading-component">
                     <div class="heading-component-inner">
                         <h5 class="heading-component-title">Proximos Jogos</h5>
-                        <p>Última atualização: 24/04/2024</p>
+                        <p>Última atualização: <span style="color: red">{{ $dataHora }}</span></p>
                     </div>
                 </article>
                 <div>

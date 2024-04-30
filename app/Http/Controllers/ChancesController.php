@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Ante5j;
 use App\Models\Chancesvit;
 use App\Models\Prox5j;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use Symfony\Component\DomCrawler\Crawler;
@@ -58,7 +59,7 @@ class ChancesController extends Controller
         $dadosProx = Prox5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
         $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
 
-
+        $dataHora = Ante5j::orderBy('id', 'desc')->first()->created_at->format('d-m-Y');
 
         // Divide os arrays em conjuntos de três para o primeiro carrossel
         $chunks1 = $dadosProx->chunk(3);
@@ -66,10 +67,8 @@ class ChancesController extends Controller
         // Divide os arrays em conjuntos de três para o segundo carrossel
         $chunks2 = $dadosAnte->chunk(3);
 
-        // $this->atualiza();
-
         // Retorna os valores para a view
-        return view('welcome', compact(['chunks1', 'chunks2']));
+        return view('welcome', compact(['chunks1', 'chunks2', 'dataHora']));
     }
 
     // public function showTable2()
@@ -151,6 +150,7 @@ class ChancesController extends Controller
                     'vitoria' => $cellEValue,
                     'empate' => $cellFValue,
                     'derrota' => $cellGValue,
+                    'created_at' => Carbon::now(),
                 ]);
         }
 
