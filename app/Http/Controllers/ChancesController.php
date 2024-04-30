@@ -43,7 +43,7 @@ class ChancesController extends Controller
         });
     
         // Busca os dados da tabela chancesvit
-        $dadosChances = Chancesvit::all();
+        $dadosChances = Chancesvit::orderBy('id', 'desc')->limit(5)->get()->reverse();
 
         // Para dividir os dados em partes
         $chunks = $dadosChances->chunk(2);
@@ -55,8 +55,10 @@ class ChancesController extends Controller
 
     public function welcome()
     {
-        $dadosProx = Prox5j::all();
-        $dadosAnte = Ante5j::all();
+        $dadosProx = Prox5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
+        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
+
+
 
         // Divide os arrays em conjuntos de três para o primeiro carrossel
         $chunks1 = $dadosProx->chunk(3);
@@ -106,7 +108,7 @@ class ChancesController extends Controller
 
     public function quemsomos()
     {
-        $dadosAnte = Ante5j::all();
+        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
 
         // Divide o array em conjuntos de três
         $chunks = $dadosAnte->chunk(3);
@@ -118,36 +120,28 @@ class ChancesController extends Controller
     public function atualiza()
     {
         // Caminho para o arquivo Excel
-        $filePath = public_path('/chancesvitoria.xlsx');
+        $filePath = public_path('/CHANCES.xlsx');
     
         // Carrega o arquivo Excel
         $spreadsheet = IOFactory::load($filePath);
     
         // Obtém a primeira planilha do arquivo
-        $sheet = $spreadsheet->getSheet(1);
+        $sheet = $spreadsheet->getSheet(3);
     
         // Obtém o número da última linha
-        $lastRow = $sheet->getHighestRow();
+        $lastRow = 7;
     
         // Percorre as linhas do arquivo Excel
         for ($row = 3; $row <= $lastRow; $row++) {
             // Obtém os valores das células
-            $cellAValue = $sheet->getCell('A' . $row)->getValue();
-            $cellBValue = $sheet->getCell('B' . $row)->getValue();
-            $cellCValue = $sheet->getCell('C' . $row)->getValue();
-            $cellDValue = $sheet->getCell('D' . $row)->getValue();
-            $cellEValue = $sheet->getCell('E' . $row)->getValue();
-            $cellFValue = $sheet->getCell('F' . $row)->getValue();
-            $cellGValue = $sheet->getCell('G' . $row)->getValue();
-    
-            // Verifica se já existe uma entrada com os mesmos valores de "timecasa" e "timefora"
-            $existingEntry = DB::table('ante5j')
-                ->where('timecasa', $cellAValue)
-                ->where('timefora', $cellBValue)
-                ->exists();
-    
-            // Se não existir uma entrada com os mesmos valores, insere os dados no banco de dados
-            if (!$existingEntry) {
+            $cellAValue = $sheet->getCell('N' . $row)->getValue();
+            $cellBValue = $sheet->getCell('O' . $row)->getValue();
+            $cellCValue = $sheet->getCell('P' . $row)->getValue();
+            $cellDValue = $sheet->getCell('Q' . $row)->getValue();
+            $cellEValue = $sheet->getCell('R' . $row)->getValue();
+            $cellFValue = $sheet->getCell('S' . $row)->getValue();
+            $cellGValue = $sheet->getCell('T' . $row)->getValue();
+
                 // Substitua 'nome_da_tabela' pelo nome real da sua tabela
                 DB::table('ante5j')->insert([
                     'timecasa' => $cellAValue,
@@ -158,32 +152,23 @@ class ChancesController extends Controller
                     'empate' => $cellFValue,
                     'derrota' => $cellGValue,
                 ]);
-            }
         }
 
         // Obtém a primeira planilha do arquivo
-        $sheet2 = $spreadsheet->getSheet(0);
+        $sheet2 = $spreadsheet->getSheet(3);
     
         // Obtém o número da última linha
-        $lastRow = $sheet2->getHighestRow();
+        $lastRow = 7;
     
         // Percorre as linhas do arquivo Excel
         for ($row = 3; $row <= $lastRow; $row++) {
             // Obtém os valores das células
-            $cellA2Value = $sheet2->getCell('A' . $row)->getValue();
-            $cellB2Value = $sheet2->getCell('B' . $row)->getValue();
-            $cellC2Value = $sheet2->getCell('C' . $row)->getValue();
-            $cellD2Value = $sheet2->getCell('D' . $row)->getValue();
-            $cellE2Value = $sheet2->getCell('E' . $row)->getValue();
+            $cellA2Value = $sheet2->getCell('F' . $row)->getValue();
+            $cellB2Value = $sheet2->getCell('G' . $row)->getValue();
+            $cellC2Value = $sheet2->getCell('H' . $row)->getValue();
+            $cellD2Value = $sheet2->getCell('I' . $row)->getValue();
+            $cellE2Value = $sheet2->getCell('J' . $row)->getValue();
     
-            // Verifica se já existe uma entrada com os mesmos valores de "timecasa" e "timefora"
-            $existingEntry = DB::table('prox5j')
-                ->where('timecasa', $cellA2Value)
-                ->where('timefora', $cellB2Value)
-                ->exists();
-    
-            // Se não existir uma entrada com os mesmos valores, insere os dados no banco de dados
-            if (!$existingEntry) {
                 // Substitua 'nome_da_tabela' pelo nome real da sua tabela
                 DB::table('prox5j')->insert([
                     'timecasa' => $cellA2Value,
@@ -192,44 +177,28 @@ class ChancesController extends Controller
                     'empate' => $cellD2Value,
                     'derrota' => $cellE2Value,
                 ]);
-            }
         }
 
         // Obtém a primeira planilha do arquivo
-        $sheet3 = $spreadsheet->getSheet(2);
+        $sheet3 = $spreadsheet->getSheet(3);
     
-        // Obtém o número da última linha
-        $lastRow = $sheet3->getHighestRow();
-    
-        // Percorre as linhas do arquivo Excel
-        for ($row = 3; $row <= $lastRow; $row++) {
-            // Obtém os valores das células
-            $cellA3Value = $sheet3->getCell('A' . $row)->getValue();
-            $cellB3Value = $sheet3->getCell('B' . $row)->getValue();
-            $cellC3Value = $sheet3->getCell('C' . $row)->getValue();
-            $cellD3Value = $sheet3->getCell('D' . $row)->getValue();
-            $cellE3Value = $sheet3->getCell('E' . $row)->getValue();
-            $cellF3Value = $sheet3->getCell('F' . $row)->getValue();
-    
-            // Verifica se já existe uma entrada com os mesmos valores de "timecasa" e "timefora"
-            $existingEntry = DB::table('chancesvit')
-                ->where('campeao', $cellA3Value)
-                ->where('libertadores', $cellB3Value)
-                ->exists();
-    
-            // Se não existir uma entrada com os mesmos valores, insere os dados no banco de dados
-            if (!$existingEntry) {
-                // Substitua 'nome_da_tabela' pelo nome real da sua tabela
-                DB::table('chancesvit')->insert([
-                    'campeao' => $cellA3Value,
-                    'libertadores' => $cellB3Value,
-                    'sulamericana' => $cellC3Value,
-                    'rebaixamento' => $cellD3Value,
-                    'previsao' => $cellE3Value,
-                    'posicao' => $cellF3Value,
-                ]);
-            }
-        }
+        // Obtém os valores das células
+        $cellA3Value = $sheet3->getCell('X3')->getValue();
+        $cellB3Value = $sheet3->getCell('X4')->getValue();
+        $cellC3Value = $sheet3->getCell('X5')->getValue();
+        $cellD3Value = $sheet3->getCell('X9')->getValue();
+        $cellE3Value = $sheet3->getCell('X7')->getValue();
+        $cellF3Value = $sheet3->getCell('X8')->getValue();
+
+            // Substitua 'nome_da_tabela' pelo nome real da sua tabela
+            DB::table('chancesvit')->insert([
+                'campeao' => $cellA3Value,
+                'libertadores' => $cellB3Value,
+                'sulamericana' => $cellC3Value,
+                'rebaixamento' => $cellE3Value,
+                'previsao' => $cellF3Value,
+                'posicao' => $cellD3Value,
+            ]);
     }
     
 
