@@ -44,7 +44,7 @@ class ChancesController extends Controller
         });
     
         // Busca os dados da tabela chancesvit
-        $dadosChances = Chancesvit::orderBy('id', 'desc')->limit(5)->get()->reverse();
+        $dadosChances = Chancesvit::orderBy('id', 'desc')->limit(1)->get()->reverse();
 
         // Para dividir os dados em partes
         $chunks = $dadosChances->chunk(2);
