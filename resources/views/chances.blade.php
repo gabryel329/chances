@@ -104,7 +104,7 @@
                 </article>
                 <div class="col align-self-center">
                     <div class="col-lg-12">
-                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                        <div class="card text-center" style="border: 4px solid #9EEB47;">
                             <div class="card-header" style="text-align: center">
                                 <h5><img src="images/{{ strtolower(trim($timecasa)) }}.png">
                                     {{ $timecasa }} x {{ $timefora }}
