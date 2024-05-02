@@ -101,7 +101,7 @@
                 </div>
             </div>
         </section> --}}
-        <section class="section section-md" style="margin-top: -30px;">
+        <section class="section section-xs">
             
             <div class="container">
                 <div class="row justify-content-end">
@@ -188,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-md">
+        <section class="section section-xs">
           <div class="container">
               <!-- Heading Component-->
               <article class="heading-component">

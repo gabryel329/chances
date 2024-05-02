@@ -62,31 +62,16 @@
                     </div>
                     <div class="rd-navbar-main">
                         <div class="container text-center">
-                            <div class="row">
-                                <div class="col-6 col-sm-6">
-                                    <div style="text-align: left;">
-                                        <a href="./">
-                                            <img src="images/logo-soccer-default-95x126.png" alt=""
-                                                width="95" height="126" />
-                                            <h6 class="heading-component-title">Chances do Vitória</h6>
-                                        </a>
-                                    </div>
+                            <div class="row justify-content-start">
+                                <div class="col-12" style="padding: 10px">
+                                    <a href="./" class="d-flex align-items-center">
+                                        <img src="images/logo-soccer-default-95x126.png" alt="" width="70" height="100" />
+                                        <h6 class="font-nitrous-oxides" style="padding: 6.5px 0px 0px 0px">
+                                            <span style="color: #F66604; margin-left: -30px">Chances</span><br>
+                                            <span style="color: #fff">do Vitória</span>
+                                        </h6>
+                                    </a>
                                 </div>
-                                <div class="col-6 col-sm-6">
-                                    <ul class="rd-navbar-nav" style="margin-top: 20px;">
-                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
-                                                href="./QuemSomos">Quem Somos</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="heading-component-title"
-                                                href="./Chances">Chances</a>
-                                        </li> --}}
-                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
-                                                href="./Elenco">Elenco</a>
-                                        </li> --}}
-                                    </ul>
-                                </div>
-                                <!-- Force next columns to break to new line -->
-                                <div class="w-100"></div>
                             </div>
                         </div>
                     </div>
@@ -104,13 +89,13 @@
                 </article>
                 <div class="col align-self-center">
                     <div class="col-lg-12">
-                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                        <div class="card">
                             <div class="card-header" style="text-align: center">
                                 <h5><img src="images/{{ strtolower(trim($timecasa)) }}.png">
                                     {{ $timecasa }} x {{ $timefora }}
                                     <img src="images/{{ strtolower(trim($timefora)) }}.png"></h5>
                             </div>
-                            <div class="card-body" style="background-color: #e2e1e1">
+                            <div class="card-body">
                                 <br>
                                 <div class="grid text-center">
                                     <div class="row">
@@ -118,9 +103,9 @@
                                             <h6>Chances <span style="color: green;">{{ $probabilidade*100 }}%</span></h6>
                                             <div class="col-md">
                                                 <p>
-                                                    <li style="color: #212121">{{ $frase1 }}</li>
-                                                    <li style="color: #212121">{{ $frase2 }}</li>
-                                                    <li style="color: #212121">{{ $frase3 }}</li>
+                                                    <li class="list-group-item" style="border-radius: 10px">{{ $frase1 }}</li>
+                                                    <li class="list-group-item" style="border-radius: 10px">{{ $frase2 }}</li>
+                                                    <li class="list-group-item" style="border-radius: 10px">{{ $frase3 }}</li>
                                                 </p>
                                             </div>
                                         </div>
@@ -185,9 +170,6 @@
                         <p class="rights"><span>A&B Entertainment and
                                 Business</span><span>&nbsp;&copy;&nbsp;</span><span
                                 class="copyright-year"></span><span>.&nbsp;</span>
-                            {{-- <span>
-                            Designed by <a href="https://www.templatemonster.com/products/author/zemez/">Zemez.</a>
-                        </span> --}}
                         </p>
                         <nav class="nav-minimal">
                             <ul class="nav-minimal-list">
