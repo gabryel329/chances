@@ -20,7 +20,7 @@
     <form class="login-form" method="POST" action="{{ route('login') }}">
       @csrf
       <div class="card p-4">
-        <h1 class="h3 mb-3 fw-normal"><img src="images/logo-soccer-default-95x126.png" alt=""
+        <h1 class="h3 mb-3 fw-normal"><img src="images/logo-soccer-default-95x126 copy.png" alt=""
             width="95" height="95" /></h1>
         <div class="form-floating mb-3">
           <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>

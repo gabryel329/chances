@@ -36,7 +36,7 @@
     </style>
 </head>
 
-<body style="background-color: hsl(0, 0%, 85%)">
+<body>
     <div class="ie-panel"></div>
     <div class="preloader">
         <div class="preloader-body">
