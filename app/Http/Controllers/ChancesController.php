@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 class ChancesController extends Controller
 {
 
-    public function chances()
+    public function chances(Request $request)
     {
         // Configurando o cliente cURL com verificação de certificado desativada temporariamente
         $client = new Client([
@@ -43,14 +43,45 @@ class ChancesController extends Controller
             $rows[] = $rowData;
         });
     
-        // Busca os dados da tabela chancesvit
-        $dadosChances = Chancesvit::orderBy('id', 'desc')->limit(1)->get()->reverse();
+        $timecasa = $request->query('timecasa');
+        $timefora = $request->query('timefora');
+        $probabilidade = $request->query('probabilidade');
+        $frase1 = '';
+        $frase2 = '';
+        $frase3 = '';
 
-        // Para dividir os dados em partes
-        $chunks = $dadosChances->chunk(2);
+        if ($probabilidade >= 0.01 && $probabilidade <= 0.33) {
+            $frases = [
+                "Apesar das últimas derrotas, nosso time tem demonstrado um desempenho promissor. Com dedicação e estratégia, podemos surpreender e alcançar a vitória.",
+                "Embora enfrentemos um desafio difícil, devemos confiar na determinação e no talento do nosso elenco. Cada jogo é uma oportunidade para mostrar nossa capacidade de superação.",
+                "Mesmo que as estatísticas apontem para uma vantagem mínima, nosso time possui uma mentalidade resiliente. Acreditamos no nosso potencial de virar o jogo e conquistar a vitória."
+            ];
+            $frase1 = $frases[0];
+            $frase2 = $frases[1];
+            $frase3 = $frases[2];
+        } elseif ($probabilidade >= 0.34 && $probabilidade <= 0.66) {
+            $frases = [
+                "Com um histórico equilibrado de vitórias e derrotas, sabemos que temos capacidade para competir em alto nível. Nosso foco e preparação nos colocam em uma posição favorável para alcançar a vitória.",
+                "As análises indicam que temos boas chances de sair vitoriosos neste confronto. Vamos aproveitar essa oportunidade para impor nosso jogo e buscar os três pontos.",
+                "Diante de um adversário de qualidade, reconhecemos que o jogo será disputado. No entanto, confiamos na nossa estratégia e na qualidade do nosso elenco para alcançar a vitória."
+            ];
+            $frase1 = $frases[0];
+            $frase2 = $frases[1];
+            $frase3 = $frases[2];
+        } elseif ($probabilidade >= 0.67 && $probabilidade <= 1.0) {
+            $frases = [
+                "Com uma série de vitórias consecutivas e um desempenho consistente, estamos confiantes em nossa capacidade de dominar este jogo. Vamos entrar em campo determinados a manter nossa invencibilidade.",
+                "Nossa equipe tem demonstrado um domínio absoluto nos últimos jogos, refletindo uma superioridade técnica e tática. Estamos confiantes de que podemos continuar nossa sequência vitoriosa.",
+                "Com base no nosso histórico impecável contra este adversário e no alto nível de preparação, estamos extremamente confiantes em garantir mais uma vitória. Entraremos em campo com a convicção de que somos os favoritos indiscutíveis."
+            ];
+            $frase1 = $frases[0];
+            $frase2 = $frases[1];
+            $frase3 = $frases[2];
+        }
 
-        // Retornando a view 'chances' com os dados da tabela HTML e da tabela chancesvit
-        return view('chances', compact('rows', 'chunks'));
+
+        return view('chances', compact('rows', 'timecasa', 'timefora', 'probabilidade', 'frase1', 'frase2', 'frase3'));
+
     }
     
 

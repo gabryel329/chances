@@ -99,104 +99,40 @@
                 <!-- Heading Component-->
                 <article class="heading-component">
                     <div class="heading-component-inner">
-                        <h5 class="heading-component-title">Competições</h5>
+                        <h5 class="heading-component-title">Chances para o jogo: </h5>
                     </div>
                 </article>
-                <div>
-                    <div class="col-12">
-                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                @foreach ($chunks as $index => $chunk)
-                                    <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                        <div class="row">
-                                            @foreach ($chunk as $value)
-                                                <div class="col-lg-6" style="margin: 5px 0px;">
-                                                    <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
-                                                        <div class="card-header" style="text-align: center">
-                                                            <h5>Campeonato Brasileiro</h5>
-                                                        </div>
-                                                        <div class="card-body" style="background-color: #e2e1e1">
-                                                            <p style="text-align: center; color: #212121">
-                                                                <img src="images/Vitória.png">
-                                                            </p>
-                                                            <h5 class="text-lg font-bold">Chances</h5>
-                                                            <br>
-                                                            <div class="grid text-center">
-                                                                <div class="row">
-                                                                    <div class="col-4">
-                                                                        <h6>Campeão</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">
-                                                                                {{ $value->campeao }}%
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <h6>Libertadores</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">
-                                                                                {{ $value->libertadores }}%
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <h6>SulAmericana</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">
-                                                                                {{ $value->sulamericana }}%
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-4">
-                                                                        <h6>Rebaixamento</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">
-                                                                                {{ $value->rebaixamento }}%
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <h6>Previsão</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">
-                                                                                {{ $value->previsao }}°
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-4">
-                                                                        <h6>Posição</h6>
-                                                                        <div>
-                                                                            <p style="color: #212121">
-                                                                                {{ $value->posicao }}°
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            @endforeach
+                <div class="col align-self-center">
+                    <div class="col-lg-12">
+                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                            <div class="card-header" style="text-align: center">
+                                <h5><img src="images/{{ strtolower(trim($timecasa)) }}.png">
+                                    {{ $timecasa }} x {{ $timefora }}
+                                    <img src="images/{{ strtolower(trim($timefora)) }}.png"></h5>
+                            </div>
+                            <div class="card-body" style="background-color: #e2e1e1">
+                                <br>
+                                <div class="grid text-center">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6>Chances <span style="color: green;">{{ $probabilidade*100 }}%</span></h6>
+                                            <div class="col-md">
+                                                <p>
+                                                    <li style="color: #212121">{{ $frase1 }}</li>
+                                                    <li style="color: #212121">{{ $frase2 }}</li>
+                                                    <li style="color: #212121">{{ $frase3 }}</li>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                @endforeach
+                                </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="card-footer">
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+            </div>   
         </section>
         <section class="section section-md bg-gray-100">
             <div class="container">

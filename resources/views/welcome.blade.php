@@ -139,16 +139,16 @@
                                         <div class="row">
                                             @foreach ($chunk as $value)
                                                 <div class="col-lg-4" style="margin: 5px 0px;">
-                                                    <a class="elemento" href="/Chances" title="Veja as probabilidades.">
+                                                    <a class="elemento" href="/Chances?timecasa={{ $value->timecasa }}&timefora={{ $value->timefora }}&probabilidade={{ $value->vitoria }}" title="Veja as probabilidades.">
                                                         <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%; width: 100%;">
                                                             <div class="card-header" style="text-align: center">
                                                                 <h5>Campeonato Brasileiro</h5>
                                                             </div>
                                                             <div class="card-body" style="background-color: #e2e1e1">
                                                                 <p style="text-align: center; color: #212121">
-                                                                    <img src="images/{{ strtolower($value->timecasa) }}.png">
+                                                                    <img src="images/{{ strtolower(trim($value->timecasa)) }}.png">
                                                                     {{ $value->timecasa }} x {{ $value->timefora }}
-                                                                    <img src="images/{{ strtolower($value->timefora) }}.png">
+                                                                    <img src="images/{{ strtolower(trim($value->timefora)) }}.png">
                                                                 </p>
                                                             </div>
                                                             <div class="card-footer">
@@ -159,7 +159,7 @@
                                                                         <div class="col-12">
                                                                             <h6 style="color: green">Vitória</h6>
                                                                             <div>
-                                                                                <p style="color: #212121">{{ substr($value->vitoria, 0, 4) }}%
+                                                                                <p style="color: #212121">{{ substr($value->vitoria, 0, 4)*100 }}%
                                                                                 </p>
                                                                                 {{-- Adicione outras informações aqui --}}
                                                                             </div>
@@ -226,9 +226,9 @@
                                                       </div>
                                                       <div class="card-body" style="background-color: #e2e1e1">
                                                             <p style="text-align: center; color: #212121">
-                                                                <img src="images/{{ strtolower($value->timecasa) }}.png">
+                                                                <img src="images/{{ strtolower(trim($value->timecasa)) }}.png">
                                                                 {{ $value->timecasa }} {{ $value->golscasa }} x {{ $value->golsfora }} {{ $value->timefora }}
-                                                                <img src="images/{{ strtolower($value->timefora) }}.png">
+                                                                <img src="images/{{ strtolower(trim($value->timefora)) }}.png">
                                                             </p>
                                                       </div>
                                                       <div class="card-footer">
@@ -239,7 +239,7 @@
                                                                   <div class="col-12">
                                                                       <h6 style="color: green">Vitória</h6>
                                                                       <div>
-                                                                          <p style="color: #212121">{{ substr($value->vitoria, 0, 4) }}%</p>
+                                                                          <p style="color: #212121">{{ substr($value->vitoria, 0, 4)*100 }}%</p>
                                                                           {{-- Adicione outras informações aqui --}}
                                                                       </div>
                                                                   </div>
