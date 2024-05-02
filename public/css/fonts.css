@@ -15,6 +15,14 @@
 	font-style: normal;
 }
 
+@font-face {
+    font-family: 'Nitrous Oxides';
+    src: url('/fonts/nitrousoxide-9yoo0.ttf') format('truetype'),
+         url('/fonts/nitrousoxide-ywdjz.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .fa {
 	display: inline-block;
 	font-family: 'FontAwesome';
