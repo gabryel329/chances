@@ -18,7 +18,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Chances
+                    <img src="images/logo-soccer-default-95x126.png" alt=""
+            width="50" height="50" />Chances
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -67,11 +68,15 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <h4>Anexar Excel atualizado!</h4>
+                            <h4>Anexar Excel atualizado</h4>
                             <form action="{{ route('upload.excel') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                <input type="file" name="excel_file">
-                                <button type="submit" class="btn btn-info">Enviar</button>
+                                <div class="input-group">
+                                    <input class="form-control" type="file" name="excel_file">
+                                    <div class="input-group-append" style="margin-left: 10px">
+                                        <button type="submit" class="btn btn-danger">Enviar</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                         <div class="col">
@@ -84,6 +89,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </main>
     <script src="js/core.min.js"></script>
