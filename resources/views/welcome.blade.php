@@ -37,14 +37,8 @@
 </head>
 
 <body>
-    <div class="ie-panel"></div>
-    <div class="preloader">
-        <div class="preloader-body">
-            <div class="preloader-item"></div>
-        </div>
-    </div>
     <!-- Page-->
-    <div class="page">
+    <div>
         <!-- Page Header-->
         <header class="section page-header rd-navbar-dark">
             <!-- RD Navbar-->
