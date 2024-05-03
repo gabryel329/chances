@@ -24807,3 +24807,60 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	margin-right: 4px;
 	vertical-align: middle;
 }
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table-custom th, 
+.table-custom td {
+    text-align: center;
+    padding: 8px;
+
+}
+
+.table-custom th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.table-custom tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-custom-responsive {
+    overflow-x: auto;
+}
+
+/* Definição de cores para as células */
+.cell-top-four {
+    background-color: #2161c7; /* Cor mais clara de azul */
+    color: #fff
+}
+
+.cell-middle-two {
+    background-color: #d07026; /* Cor mais clara de laranja */
+    color: #fff
+}
+
+.cell-middle-seven {
+    background-color: #1fbe4a; /* Cor mais clara de verde */
+    color: #fff
+}
+
+.cell-bottom-four {
+    background-color: #d42a18; /* Cor mais clara de vermelho */
+    color: #fff
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}

@@ -50,7 +50,7 @@
                         </div>
                     </article>
                     <div class="table-custom-responsive">
-                        <table class="table-custom table-standings table-classic">
+                        <table class="table-custom">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -68,18 +68,56 @@
                             </thead>
                             <tbody>
                                 @foreach ($rows as $index => $row)
-                                    <tr>
-                                        <!-- Verifica se não é a primeira linha antes de imprimir o índice -->
-                                        <td>{{ $index > 0 ? $index : '' }}</td>
-                                        @foreach ($row as $cell)
-                                            <td>{{ $cell }}</td>
-                                        @endforeach
-                                    </tr>
+                                @if ($index != 0)
+                                <tr>
+                                    <td class="@if($index >= 1 && $index <= 4)
+                                        cell-top-four
+                                    @elseif($index >= 5 && $index <= 6)
+                                        cell-middle-two
+                                    @elseif($index >= 7 && $index <= 12)
+                                        cell-middle-seven       
+                                    @elseif($index > 16) <!-- Ajuste conforme o total de times -->
+                                        cell-bottom-four
+                                    @endif" >{{ $index }}</td>
+                                    <!-- Incorporar a imagem ao lado do nome do time na mesma célula -->
+                                    <td >
+                                        <img src="images/images_table/{{ strtolower($row[1]) }}.png" style="height: 25px; vertical-align: middle; margin-right: 5px;">
+                                        {{ $row[1] }} <!-- Nome do time -->
+                                    </td>
+                                    <!-- Loop através de outras células excluindo a primeira que contém o nome -->
+                                    @foreach ($row as $cell_index => $cell)
+                                    @if ($cell_index != 1) <!-- Pular o índice do nome do time para não duplicar -->
+                                        <td>{{ $cell }}</td>
+                                    @endif
+                                    @endforeach
+                                </tr>
+                                @endif
                                 @endforeach
                             </tbody>
+                            <tfoot>
+                                <tr style="background: #e4e4e4">
+                                    <td colspan="3">
+                                        <div class="color-box" style="background-color:#2161c7"></div>
+                                        Fase de grupos da Copa Libertadores
+                                    </td>
+                                
+                                    <td colspan="3">
+                                        <div class="color-box" style="background-color:#d07026"></div>
+                                        Qualificatórias da Copa Libertadores
+                                    </td>
+                               
+                                    <td colspan="3">
+                                        <div class="color-box" style="background-color:#1fbe4a"></div>
+                                        Fase de grupos da Copa Sul-Americana
+                                    </td>
+                              
+                                    <td colspan="3">
+                                        <div class="color-box" style="background-color:#d42a18"></div>
+                                        Rebaixamento
+                                    </td>
+                                </tr>
+                            </tfoot>
                         </table>
-
-
                     </div>
                 </div>
             </div>
