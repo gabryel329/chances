@@ -205,7 +205,7 @@
                                       <div class="row">
                                           @foreach ($chunk as $value)
                                             <div class="col-lg-4">
-                                              <a class="elemento"  href="/Chances?timecasa={{ $value->timecasa }}&timefora={{ $value->timefora }}&probabilidade={{ $value->vitoria }}" title="Veja as probabilidades.">
+                                              <a class="elemento"  href="/Chances" title="Veja as probabilidades.">
                                                 <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%; width: 100%;">
                                                       <div class="card-header" style="text-align: center">
                                                           <h5>Campeonato Brasileiro</h5>
