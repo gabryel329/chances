@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css"
         href="//fonts.googleapis.com/css?family=Kanit:300,400,500,500i,600,900%7CRoboto:400,900">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">    
     <link rel="stylesheet" href="css/style.css">
     <style>
         .ie-panel {
@@ -61,37 +61,23 @@
                     </div>
                     <div class="rd-navbar-main">
                         <div class="container text-center">
-                            <div class="row">
-                                <div class="col-6 col-sm-6">
-                                    <div style="text-align: left;">
-                                        <a href="./">
-                                            <img src="images/logo-soccer-default-95x126.png" alt=""
-                                                width="95" height="126" />
-                                            <h6 class="heading-component-title">Chances do Vitória</h6>
-                                        </a>
-                                    </div>
+                            <div class="row justify-content-start">
+                                <div class="col-12" style="padding: 10px">
+                                    <a href="./" class="d-flex align-items-center">
+                                        <img src="images/logo-soccer-default-95x126.png" alt="" width="70" height="100" />
+                                        <h6 class="font-nitrous-oxides" style="padding: 6.5px 0px 0px 0px">
+                                            <span style="color: #F66604; margin-left: -30px">Chances</span><br>
+                                            <span style="color: #fff">do Vitória</span>
+                                        </h6>
+                                    </a>
                                 </div>
-                                <div class="col-6 col-sm-6">
-                                    <ul class="rd-navbar-nav" style="margin-top: 20px;">
-                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
-                                                href="/QuemSomos">Quem Somos</a>
-                                        </li>
-                                        <li class="rd-nav-item"><a class="heading-component-title"
-                                                href="/Chances">Chances</a>
-                                        </li> --}}
-                                        {{-- <li class="rd-nav-item"><a class="heading-component-title"
-                                                href="/Elenco">Elenco</a>
-                                        </li> --}}
-                                    </ul>
-                                </div>
-                                <!-- Force next columns to break to new line -->
-                                <div class="w-100"></div>
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
+        
         <!-- Swiper-->
         {{-- <section style="margin-top: -50px; margin-bottom: -40px" class="section swiper-container swiper-slider swiper-classic bg-gray-2" data-loop="false"
             data-autoplay="4000" data-simulate-touch="false" data-slide-effect="fade">
@@ -115,7 +101,7 @@
                 </div>
             </div>
         </section> --}}
-        <section class="section section-md bg-gray-100" style="margin-top: -30px;">
+        <section class="section section-xs">
             
             <div class="container">
                 <div class="row justify-content-end">
@@ -202,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-md bg-gray-100">
+        <section class="section section-xs">
           <div class="container">
               <!-- Heading Component-->
               <article class="heading-component">
