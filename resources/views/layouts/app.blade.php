@@ -42,9 +42,7 @@
         @session_start();
     @endphp
 
-    @auth
-        @include('layouts.header')  
-    @endauth
+    @include('layouts.header')
 
     @yield('content')
 
