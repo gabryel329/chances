@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/logo-soccer-default-95x126.png" style="width: auto; height: auto;" type="image/x-icon">
     <!-- Stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -89,7 +89,7 @@
                 </article>
                 <div class="col align-self-center">
                     <div class="col-lg-12">
-                        <div class="card text-center" style="border: 4px solid #9EEB47; border-radius: 10%;">
+                        <div class="card text-center" style="border: 4px solid #9EEB47;">
                             <div class="card-header" style="text-align: center">
                                 <h5><img src="images/{{ strtolower(trim($timecasa)) }}.png">
                                     {{ $timecasa }} x {{ $timefora }}
