@@ -172,17 +172,17 @@ class ChancesController extends Controller
             $cellFValue = $sheet->getCell('S' . $row)->getValue();
             $cellGValue = $sheet->getCell('T' . $row)->getValue();
 
-                // Substitua 'nome_da_tabela' pelo nome real da sua tabela
-                DB::table('ante5j')->insert([
-                    'timecasa' => $cellAValue,
-                    'timefora' => $cellBValue,
-                    'golscasa' => $cellCValue,
-                    'golsfora' => $cellDValue,
-                    'vitoria' => $cellEValue,
-                    'empate' => $cellFValue,
-                    'derrota' => $cellGValue,
-                    'created_at' => Carbon::now(),
-                ]);
+            // Substitua 'nome_da_tabela' pelo nome real da sua tabela
+            DB::table('ante5j')->insert([
+                'timecasa' => $cellAValue,
+                'timefora' => $cellBValue,
+                'golscasa' => $cellCValue,
+                'golsfora' => $cellDValue,
+                'vitoria' => $cellEValue,
+                'empate' => $cellFValue,
+                'derrota' => $cellGValue,
+                'created_at' => Carbon::now(),
+            ]);
         }
 
         // Obtém a primeira planilha do arquivo

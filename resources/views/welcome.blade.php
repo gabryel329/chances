@@ -28,7 +28,7 @@
                                                     <a class="elemento" href="/Chances?timecasa={{ $value->timecasa }}&timefora={{ $value->timefora }}&probabilidade={{ $value->vitoria }}" title="Veja as probabilidades.">
                                                         <div class="card text-center" style="border: 4px solid #fe944d; border-radius: 10%; width: 100%;">
                                                             <div class="card-header" style="text-align: center">
-                                                                <h5>Campeonato Brasileiro</h5>
+                                                                <h5>Rodada Seguinte</h5>
                                                             </div>
                                                             <div class="card-body" style="background-color: #e2e1e1">
                                                                 <p style="text-align: center; color: #212121">
@@ -108,7 +108,7 @@
                                                 <a class="elemento"  href="/Chances?timecasa={{ $value->timecasa }}&timefora={{ $value->timefora }}&probabilidade={{ $value->vitoria }}" title="Veja as probabilidades.">
                                                 <div class="card text-center" style="border: 4px solid #fe944d; border-radius: 10%; width: 100%;">
                                                       <div class="card-header" style="text-align: center">
-                                                          <h5>Campeonato Brasileiro</h5>
+                                                          <h5>Rodada Anterior</h5>
                                                       </div>
                                                       <div class="card-body" style="background-color: #e2e1e1">
                                                             <p style="text-align: center; color: #212121">
