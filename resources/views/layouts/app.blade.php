@@ -65,7 +65,7 @@
     @stack('css')
 </head>
 
-<body style="margin-bottom: 100px">
+<body>
     @php
         @session_start();
     @endphp
@@ -143,7 +143,7 @@
     </script>
     @stack('scripts')
 
-        <footer class="section footer-classic footer-classic-dark context-dark fixed-bottom">
+        <footer class="section footer-classic footer-classic-dark context-dark relative">
             <div class="footer-classic-aside footer-classic-darken">
                 <div class="container">
                     <div class="layout-justify">
