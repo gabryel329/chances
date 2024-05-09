@@ -61,6 +61,10 @@
             vertical-align: middle;
             margin-right: 5px;
         }
+
+        body{
+            min-height: 100vh ;
+        }
     </style>
     @stack('css')
 </head>
@@ -143,32 +147,35 @@
     </script>
     @stack('scripts')
 
-        <footer class="section footer-classic footer-classic-dark context-dark relative">
-            <div class="footer-classic-aside footer-classic-darken">
-                <div class="container">
-                    <div class="layout-justify">
-                        <!-- Rights-->
-                        <p class="rights"><span>A&B Entertainment and
-                                Business</span><span>&nbsp;&copy;&nbsp;</span><span
-                                class="copyright-year"></span><span>.&nbsp;</span>
-                            {{-- <span>
-                            Designed by <a href="https://www.templatemonster.com/products/author/zemez/">Zemez.</a>
+    <footer class="section footer-classic footer-classic-dark context-dark">
+        <div class="footer-classic-aside footer-classic-darken">
+            <div class="container">
+                <div class="layout-justify">
+                    <!-- Rights-->
+                    <p class="rights">
+                        <span>A&B Entertainment and Business</span>
+                        <span>&nbsp;&copy;&nbsp;</span>
+                        <span class="copyright-year"></span>
+                        <span>.&nbsp;</span>
+                        {{-- <span>
+                        Designed by <a href="https://www.templatemonster.com/products/author/zemez/">Zemez.</a>
                         </span> --}}
-                        </p>
-                        <nav class="nav-minimal">
-                            <ul class="nav-minimal-list">
-                                {{-- <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Statistics</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Shop</a></li> --}}
-                            </ul>
-                        </nav>
-                    </div>
+                    </p>
+                    <nav class="nav-minimal">
+                        <ul class="nav-minimal-list">
+                            {{-- <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Shop</a></li> --}}
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+    
 
 </body>
 
