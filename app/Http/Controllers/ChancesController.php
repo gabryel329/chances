@@ -88,7 +88,7 @@ class ChancesController extends Controller
     public function welcome()
     {
         $dadosProx = Prox5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
-        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
+        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get();
 
         $dataHora = Ante5j::orderBy('id', 'desc')->first()->created_at->format('d-m-Y');
 
@@ -138,7 +138,7 @@ class ChancesController extends Controller
 
     public function quemsomos()
     {
-        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get()->reverse();
+        $dadosAnte = Ante5j::orderBy('id', 'desc')->limit(5)->get();
 
         // Divide o array em conjuntos de três
         $chunks = $dadosAnte->chunk(3);
