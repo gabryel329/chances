@@ -33,11 +33,39 @@
         html.lt-ie-10 .ie-panel {
             display: block;
         }
+        .cell-top-four {
+            background-color: hsl(217, 72%, 45%, 0.5) !important; /* Cor mais clara de azul */
+            color: #fff
+        }
+
+        .cell-middle-two {
+            background-color: rgba(208, 112, 38, 0.5) !important; /* Cor mais clara de laranja */
+            color: #fff
+            
+        }
+
+        .cell-middle-seven {
+            background-color: hsla(136, 72%, 43%, 0.5) !important; /* Cor mais clara de verde */
+            color: #fff
+        }
+
+        .cell-bottom-four {
+            background-color: hsl(6, 80%, 46%, 0.5) !important; /* Cor mais clara de vermelho */
+            color: #fff
+        }
+
+        .color-box {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
     </style>
     @stack('css')
 </head>
 
-<body>
+<body style="margin-bottom: 100px">
     @php
         @session_start();
     @endphp
@@ -54,7 +82,7 @@
 
     @stack('scripts')
 
-        <footer class="section footer-classic footer-classic-dark context-dark">
+        <footer class="section footer-classic footer-classic-dark context-dark fixed-bottom">
             <div class="footer-classic-aside footer-classic-darken">
                 <div class="container">
                     <div class="layout-justify">

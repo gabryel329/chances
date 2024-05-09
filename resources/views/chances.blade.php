@@ -50,8 +50,8 @@
                         </div>
                     </article>
                     <div class="table-custom-responsive">
-                        <table class="table-custom">
-                            <thead>
+                        <table class="table table-hover table-bordered">
+                            <thead class="table-dark">
                                 <tr>
                                     <th>#</th>
                                     <th colspan="2">Time</th>
@@ -81,7 +81,7 @@
                                     @endif" >{{ $index }}</td>
                                     <!-- Incorporar a imagem ao lado do nome do time na mesma célula -->
                                     <td >
-                                        <img src="images/images_table/{{ strtolower($row[1]) }}.png" style="height: 25px; vertical-align: middle; margin-right: 5px;">
+                                        <img src="images/chances-images/{{ strtolower($row[1]) }}.png" style="height: 25px; vertical-align: middle; margin-right: 5px;">
                                         {{ $row[1] }} <!-- Nome do time -->
                                     </td>
                                     <!-- Loop através de outras células excluindo a primeira que contém o nome -->
@@ -95,7 +95,7 @@
                                 @endforeach
                             </tbody>
                             <tfoot>
-                                <tr style="background: #e4e4e4">
+                                <tr>
                                     <td colspan="3">
                                         <div class="color-box" style="background-color:#2161c7"></div>
                                         Fase de grupos da Copa Libertadores
