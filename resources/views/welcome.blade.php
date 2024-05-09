@@ -33,7 +33,7 @@
                                                             <div class="card-body" style="background-color: #e2e1e1">
                                                                 <p style="text-align: center; color: #212121">
                                                                     <img src="images/{{ strtolower(trim($value->timecasa)) }}.png">
-                                                                    {{ $value->timecasa }} x {{ $value->timefora }}
+                                                                    <span class="abreviar">{{ $value->timecasa }}</span> x <span class="abreviar">{{ $value->timefora }}</span>
                                                                     <img src="images/{{ strtolower(trim($value->timefora)) }}.png">
                                                                 </p>
                                                             </div>
@@ -113,7 +113,7 @@
                                                       <div class="card-body" style="background-color: #e2e1e1">
                                                             <p style="text-align: center; color: #212121">
                                                                 <img src="images/{{ strtolower(trim($value->timecasa)) }}.png">
-                                                                {{ $value->timecasa }} {{ $value->golscasa }} x {{ $value->golsfora }} {{ $value->timefora }}
+                                                                <span class="abreviar">{{ $value->timecasa }}</span> {{ $value->golscasa }} x {{ $value->golsfora }} <span class="abreviar">{{ $value->timefora }}</span>
                                                                 <img src="images/{{ strtolower(trim($value->timefora)) }}.png">
                                                             </p>
                                                       </div>

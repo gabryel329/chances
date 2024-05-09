@@ -79,7 +79,68 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
+    <script>
+        class NomeTime {
+            constructor(nome) {
+                this.nome = nome;
+            }
+    
+            abreviar() {
+                switch (this.nome) {
+                    case 'Athletico':
+                        return 'ATH';
+                    case 'Atlético GO':
+                        return 'ATL-GO';
+                    case 'Atlético-MG':
+                        return 'ATL-MG';
+                    case 'Bahía':
+                        return 'BAH';
+                    case 'Botafogo':
+                        return 'BOT';
+                    case 'Bragantino':
+                        return 'BRA';
+                    case 'Corinthians':
+                        return 'COR';
+                    case 'Criciúma':
+                        return 'CRI';
+                    case 'Cruzeiro':
+                        return 'CRU';
+                    case 'Cuiabá':
+                        return 'CUI';
+                    case 'Flamengo':
+                        return 'FLA';
+                    case 'Fluminense':
+                        return 'FLU';
+                    case 'Fortaleza':
+                        return 'FOR';
+                    case 'Grêmio':
+                        return 'GRE';
+                    case 'Internacional':
+                        return 'INT';
+                    case 'Juventude ':
+                        return 'JUV';
+                    case 'Palmeiras':
+                        return 'PAL';
+                    case 'São Paulo':
+                        return 'SAO';
+                    case 'Vasco da Gama':
+                        return 'VAS';
+                    case 'Vitória':
+                        return 'VIT';
+                    default:
+                        return this.nome;
+                }
+            }
+        }
+    
+        // Abreviar os nomes dos times dentro de spans com a classe 'abreviar'
+        var spans = document.getElementsByClassName('abreviar');
+        for (var i = 0; i < spans.length; i++) {
+            var nomeTime = spans[i].innerText;
+            var abreviado = new NomeTime(nomeTime).abreviar();
+            spans[i].innerText = abreviado;
+        }
+    </script>
     @stack('scripts')
 
         <footer class="section footer-classic footer-classic-dark context-dark fixed-bottom">
