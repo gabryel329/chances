@@ -18,7 +18,7 @@
                             <a href="./" class="d-flex align-items-center">
                                 <img src="images/logo-soccer-default-95x126.png" alt="" width="70" height="100" />
                                 <h6 class="font-nitrous-oxides" style="padding: 6.5px 0px 0px 0px">
-                                    <span style="color: #F66604; margin-left: -30px">Chances</span><br>
+                                    <span style="color: #000; margin-left: -30px">Chances</span><br>
                                     <span style="color: #fff">do Vitória</span>
                                 </h6>
                             </a>

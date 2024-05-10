@@ -26,9 +26,9 @@
                                             @foreach ($chunk as $value)
                                                 <div class="col-lg-4" style="margin: 5px 0px;">
                                                     <a class="elemento" href="/Chances?timecasa={{ $value->timecasa }}&timefora={{ $value->timefora }}&probabilidade={{ $value->vitoria }}" title="Veja as probabilidades.">
-                                                        <div class="card text-center" style="border: 4px solid #fe944d; border-radius: 10%; width: 100%;">
+                                                        <div class="card text-center" style="border: 4px solid #F66604; border-radius: 10%; width: 100%;">
                                                             <div class="card-header" style="text-align: center">
-                                                                <h5>Rodada Seguinte</h5>
+                                                                <h5 style="color: #000">Rodada Seguinte</h5>
                                                             </div>
                                                             <div class="card-body" style="background-color: #e2e1e1">
                                                                 <p style="text-align: center; color: #212121">
@@ -38,7 +38,7 @@
                                                                 </p>
                                                             </div>
                                                             <div class="card-footer">
-                                                                <h5 class="text-lg font-bold">Chances</h5>
+                                                                <h5 class="text-lg font-bold" style="color: #000">Chances</h5>
                                                                 <br>
                                                                 <div class="grid text-center">
                                                                     <div class="row">
@@ -106,9 +106,9 @@
                                           @foreach ($chunk as $value)
                                             <div class="col-lg-4">
                                                 <a class="elemento"  href="/Chances?timecasa={{ $value->timecasa }}&timefora={{ $value->timefora }}&probabilidade={{ $value->vitoria }}" title="Veja as probabilidades.">
-                                                <div class="card text-center" style="border: 4px solid #fe944d; border-radius: 10%; width: 100%;">
+                                                <div class="card text-center" style="border: 4px solid #F66604; border-radius: 10%; width: 100%;">
                                                       <div class="card-header" style="text-align: center">
-                                                          <h5>Rodada Anterior</h5>
+                                                          <h5 style="color: #000">Rodada Anterior</h5>
                                                       </div>
                                                       <div class="card-body" style="background-color: #e2e1e1">
                                                             <p style="text-align: center; color: #212121">
@@ -118,7 +118,7 @@
                                                             </p>
                                                       </div>
                                                       <div class="card-footer">
-                                                          <h5 class="text-lg font-bold">Chances</h5>
+                                                          <h5 class="text-lg font-bold" style="color: #000">Chances</h5>
                                                           <br>
                                                           <div class="grid text-center">
                                                               <div class="row">

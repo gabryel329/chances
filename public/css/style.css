@@ -104,7 +104,7 @@ body {
 	font-weight: 400;
 	letter-spacing: 0.025em;
 	color: #9b9b9b;
-	background-color: #fff;
+	background-color: #111119;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 }
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, [class*='heading-'] {
 	font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 500;
 	letter-spacing: 0.05em;
-	color: #151515;
+	color: #fff;
 	text-transform: uppercase;
 }
 
@@ -17029,7 +17029,7 @@ html.rd-navbar-fixed-linked .page {
 * RD Navbar Classic
 */
 .rd-navbar-classic {
-	background: #000;
+	background: #F66604;
 }
 
 .rd-navbar-classic .rd-navbar-list {
