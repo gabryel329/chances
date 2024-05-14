@@ -49,75 +49,76 @@
                             <h5 class="heading-component-title">Campeonato Brasileiro</h5>
                         </div>
                     </article>
-                    <div class="table-custom-responsive" style="border-radius: 20px; overflow: hidden">
-                        <table class="table table-hover bg-gray-100">
-                            <thead class="table-light">
-                                <tr>
-                                    <th style="border-top-left-radius: 20px;">#</th>
-                                    <th colspan="2">Time</th>
-                                    <th>P</th>
-                                    <th>J</th>
-                                    <th>V</th>
-                                    <th>E</th>
-                                    <th>D</th>
-                                    <th>GP</th>
-                                    <th>GC</th>
-                                    <th>SG</th>
-                                    <th style="border-top-right-radius: 20px;">%</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($rows as $index => $row)
-                                @if ($index != 0)
-                                <tr>
-                                    <td class="@if($index >= 1 && $index <= 4)
-                                        cell-top-four
-                                    @elseif($index >= 5 && $index <= 6)
-                                        cell-middle-two
-                                    @elseif($index >= 7 && $index <= 12)
-                                        cell-middle-seven       
-                                    @elseif($index > 16) <!-- Ajuste conforme o total de times -->
-                                        cell-bottom-four
-                                    @endif" >{{ $index }}</td>
-                                    <td>
-                                        <img src="images/chances-images/{{ strtolower($row[1]) }}.png" style="height: 25px; vertical-align: middle; margin-right: 5px;">
-                                        {{ $row[1] }} <!-- Nome do time -->
-                                    </td>
-                                    @foreach ($row as $cell_index => $cell)
-                                    @if ($cell_index != 1) <!-- Pular o índice do nome do time para não duplicar -->
-                                        <td>{{ $cell }}</td>
+                    <div class="table-custom-responsive" style="border-radius: 20px; overflow: hidden;">
+                        <div style="overflow-x: auto;">
+                            <table class="table table-hover bg-gray-100">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th style="border-top-left-radius: 20px;">#</th>
+                                        <th colspan="2">Time</th>
+                                        <th>P</th>
+                                        <th>J</th>
+                                        <th>V</th>
+                                        <th>E</th>
+                                        <th>D</th>
+                                        <th>GP</th>
+                                        <th>GC</th>
+                                        <th>SG</th>
+                                        <th style="border-top-right-radius: 20px;">%</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($rows as $index => $row)
+                                    @if ($index != 0)
+                                    <tr>
+                                        <td class="@if($index >= 1 && $index <= 4)
+                                            cell-top-four
+                                        @elseif($index >= 5 && $index <= 6)
+                                            cell-middle-two
+                                        @elseif($index >= 7 && $index <= 12)
+                                            cell-middle-seven       
+                                        @elseif($index > 16) <!-- Ajuste conforme o total de times -->
+                                            cell-bottom-four
+                                        @endif">{{ $index }}</td>
+                                        <td>
+                                            <img src="images/chances-images/{{ strtolower($row[1]) }}.png" style="height: 25px; vertical-align: middle; margin-right: 5px;">
+                                            {{ $row[1] }} <!-- Nome do time -->
+                                        </td>
+                                        @foreach ($row as $cell_index => $cell)
+                                        @if ($cell_index != 1) <!-- Pular o índice do nome do time para não duplicar -->
+                                            <td>{{ $cell }}</td>
+                                        @endif
+                                        @endforeach
+                                    </tr>
                                     @endif
                                     @endforeach
-                                </tr>
-                                @endif
-                                @endforeach
-                            </tbody>
-                            <tfoot class="table-light">
-                                <tr>
-                                    <td colspan="3" style="border-bottom-left-radius: 20px;">
-                                        <div class="color-box" style="background-color:#2161c7"></div>
-                                        Fase de grupos da Copa Libertadores
-                                    </td>
-                                    
-                                    <td colspan="3">
-                                        <div class="color-box" style="background-color:#d07026"></div>
-                                        Qualificatórias da Copa Libertadores
-                                    </td>
-                                   
-                                    <td colspan="3">
-                                        <div class="color-box" style="background-color:#1fbe4a"></div>
-                                        Fase de grupos da Copa Sul-Americana
-                                    </td>
-                                  
-                                    <td colspan="3" style="border-bottom-right-radius: 20px;">
-                                        <div class="color-box" style="background-color:#d42a18"></div>
-                                        Rebaixamento
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
+                                </tbody>
+                                <tfoot class="table-light">
+                                    <tr>
+                                        <td colspan="3" style="border-bottom-left-radius: 20px;">
+                                            <div class="color-box" style="background-color:#2161c7"></div>
+                                            Libertadores
+                                        </td>
+                                        
+                                        <td colspan="3">
+                                            <div class="color-box" style="background-color:#d07026"></div>
+                                            Class. Libertadores
+                                        </td>
+                                       
+                                        <td colspan="3">
+                                            <div class="color-box" style="background-color:#1fbe4a"></div>
+                                            Sul-Americana
+                                        </td>
+                                      
+                                        <td colspan="3" style="border-bottom-right-radius: 20px;">
+                                            <div class="color-box" style="background-color:#d42a18"></div>
+                                            Rebaixamento
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
         </section>

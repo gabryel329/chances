@@ -1,10 +1,8 @@
-<header class="section page-header rd-navbar-dark">
+<header >
     <!-- RD Navbar-->
-    <div class="rd-navbar-wrap">
+    <div>
         <nav class="rd-navbar rd-navbar-classic">
             <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-main"><span></span></button>
                 <!-- RD Navbar Panel-->
                 <div class="rd-navbar-panel-inner container">
                     <div class="rd-navbar-collapse">
